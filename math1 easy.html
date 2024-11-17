@@ -1,0 +1,374 @@
+<html>
+ <?php
+ $s_id = $_GET['score_id'];
+session_start();
+?>
+<head>
+<style>
+
+#c2{
+	margin-right:5%;	
+	
+}
+span{
+margin:15%;
+
+}
+
+.m1{
+	border-style:groove;
+background-color:white;
+	 border: 5px outset purple;
+
+margin-left:15%;
+margin-right:15%;
+	
+	
+}
+
+.b1{
+margin-left:40%;
+padding:10px;
+background-color:  #993399;
+color:white;
+font-size:35px;
+  border-radius: 5px;
+  border: 5px solid  #993399;
+
+}
+</style>
+
+</head>
+<body style="background-color:#f2d9f2;">
+<br>
+ <br>
+ <br>
+ <p><span style="color: #fff; background: purple; padding: 9px;"><b>Questions</b></span></p>
+
+ <div class="m1">
+ <form   method="POST" action="math2 easy.php?score_id=<?php echo $s_id; ?>" >
+  
+
+            <ul>
+           
+                <li>
+               
+                    <h3 >Let f(x) = x<sup>2</sup> + 3, then domain of f is:</h3>
+   
+                    <div>
+                        <input type="radio" name="ques1" id="ques1A" value="A" />
+                        <label >A) Set of all integers </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques1" id="ques1B" value="B" />
+                        <label >B) Set of natural numbers</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques1" id="ques1C" value="C" />
+                        <label >C) Set of real numbers</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques1" id="ques1D" value="D" />
+                        <label >D)  Set of rational number</label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+               
+                <li>
+               
+                    <h3 >If a variable y depends on a variable x in such a way that each value of x determines exactly one value of y, then y is a __________ of x</h3>
+                   
+                    <div>
+                        <input type="radio" name="ques2" id="ques2A" value="A" />
+                        <label >A)Independent variable</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques2" id="ques2B" value="B" />
+                        <label >B) Not function </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques2" id="ques2C" value="C" />
+                        <label >C) Function</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques2" id="ques2D" value="D" />
+                        <label >D)None of these </label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+               
+                <li>
+               
+                    <h3>Parametric equations x = a cos t, y = a sin t represent the equation of:</h3>
+                   
+                    <div>
+<input type="radio" name="ques3" id="ques3A" value="A" />
+
+                        <label >A) Ellipse </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques3" id="ques3B" value="B" />
+                        <label >B)  Parabola</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques3" id="ques3C" value="C" />
+                        <label for="question-3-answers-C">C)  Circle</label>
+                    </div>
+                   
+                    <div>
+                         <input type="radio" name="ques3" id="ques3D" value="D" />
+                        <label >D)  Line</label>
+                    </div>
+               
+                </li>
+               	<hr id="c2">
+                <li>
+               
+                    <h3>The symbol y = f(x) i.e. y is equal to f of x, invented by Swiss mathematician------.</h3>
+                   
+                    <div>
+                        <input type="radio" name="ques4" id="ques4A" value="A" />
+                        <label>A)  Euler</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques4" id="ques4B" value="B" />
+                        <label >B)  Cauchy
+
+</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques4" id="ques4C" value="C" />
+                        <label >C)Leibniz </label>
+                    </div>
+                   
+                    <div>
+                 <input type="radio" name="ques4" id="ques4D" value="D" />
+                        <label> D)Newton</label>
+                    </div>
+               
+                </li>
+               
+			   	<hr id="c2">
+                <li>
+               
+                    <h3>Which one is an identity function ?</h3>
+                   
+                    <div>
+
+
+                        <input type="radio" name="ques5" id="ques5A" value="A" />
+                        <label >A) f(x) = g(x)<label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques5" id="ques5B" value="B" />
+                        <label >B)  f (x) = x</label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques5" id="ques5C" value="C" />
+                        <label >C)  f(x) = 1</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques5" id="ques5D" value="D" />
+                        <label >D)None </label>
+                    </div>
+               
+                </li>
+           	<hr id="c2">
+       
+<li>
+               
+                    <h3>The linear function f(x) = ax + b is an identity function if:</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques6" id="ques6A" value="A" />
+                        <label >A)a = 0, b = 1</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques6" id="ques6B" value="B" />
+                        <label >B) a = 1, b = 0</label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques6" id="ques6C" value="C" />
+                        <label >C)a = 1, b = 1 </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques6" id="ques6D" value="D" />
+                        <label >D) a = 0, b = 1</label>
+                    </div>
+               
+                </li>
+           	<hr id="c2">
+           
+<li>
+               
+                    <h3>f (x) = x secx, then f(0)=</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques7" id="ques7A" value="A" />
+                        <label >A) -1.</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques7" id="ques7B" value="B" />
+                        <label >B)0 </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques7" id="ques7C" value="C" />
+                        <label >C) 1 </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques7" id="ques7D" value="D" />
+                        <label >D) 3 </label>
+                    </div>
+               
+                </li>
+       	<hr id="c2">
+<li>
+               
+                    <h3> Gottfried Whilhelm Leibniz was a (an) ----- mathematician:</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques8" id="ques8A" value="A" />
+                        <label>A) German</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques8" id="ques8B" value="B" />
+                        <label >B)English </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques8" id="ques8C" value="C" />
+                        <label >C) Swiss </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques8" id="ques8D" value="D" />
+                        <label >D) French</label>
+                    </div>
+               
+                </li>
+           
+       	<hr id="c2">
+<li>
+
+
+               
+                    <h3>The Maclaurin series expansion is valid only if it is:</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques9" id="ques9A" value="A" />
+                        <label >A) Convergent</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques9" id="ques9B" value="B" />
+                        <label >B) Divergent </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques9" id="ques9C" value="C" />
+                        <label >C) Increasing</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques9" id="ques9D" value="D" />
+                        <label >D) Decreasing </label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+       
+<li>
+               
+                    <h3>If s is the distance traveled by a body at time t, the velocity is given by the expression </h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques10" id="ques10A" value="A" />
+                        <label >A) x = a</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques10" id="ques10B" value="B" />
+                        <label >B)  x = 2</label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques10" id="ques10C" value="C" />
+                        <label >C)  x = 0</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques10" id="ques10D" value="D" />
+                        <label >D) None</label>
+                    </div>
+               
+                </li>
+           
+            </ul>
+
+           
+            <button type="submit"  value="submit" class="b1">Submit</button>
+ </form>
+ 
+ 
+ </div>
+
+</body>
+<?php
+ error_reporting(E_ERROR | E_PARSE);
+ 
+	  $nfa1=$_SESSION['ques1'];
+	  $nfa2=$_SESSION['ques2'];
+      $nfa3=$_SESSION['ques3'];
+
+      $nfa4=$_SESSION['ques4'];
+	  $nfa5=$_SESSION['ques5'];
+      $nfa6=$_SESSION['ques6'];
+	  $nfa7=$_SESSION['ques7'];
+	  $nfa8=$_SESSION['ques8'];
+    
+      $nfa9=$_SESSION['ques9'];
+      $nfa10=$_SESSION['ques10'];  
+
+
+			
+			
+           
+?>
+</html>

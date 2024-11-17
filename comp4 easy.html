@@ -1,0 +1,407 @@
+<html>
+ <?php
+ $s_id = $_GET['score_id'];
+session_start();
+?>
+<head>
+<style>
+#c1 {
+  border: 10px solid  #993399;
+  border-radius: 5px;
+  margin:2%;
+}
+#c2{
+	margin-right:5%;	
+	
+}
+span{
+margin:15%;
+
+}
+
+
+.m1{
+border-style:groove;
+background-color:white;
+	 border: 5px outset purple;
+margin-left:15%;
+margin-right:15%;
+}
+
+.b1{
+margin-left:40%;
+padding:10px;
+background-color:  #993399;
+color:white;
+font-size:35px;
+  border-radius: 5px;
+  border: 5px solid  #993399;
+}
+</style>
+
+<head>
+<body style="background-color:#f2d9f2;">
+<br>
+ <br>
+ <br>
+ <p><span style="color: #fff; background: purple; padding: 9px;"><b>Questions</b></span></p>
+
+ 
+ <div class="m1">
+ <form   method="POST" action="compresult easy.php?score_id=<?php echo $s_id; ?>" >
+ 
+ 
+            <ul>
+           
+                <li>
+               
+                    <h3>In 2NF, which form of dependency is removed :</h3>
+   
+                    <div>
+                        <input type="radio" name="ques31" id="ques31A" value="A" />
+                        <label >A)   associative</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques31" id="ques31B" value="B" />
+                        <label >B)transitive </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques31" id="ques31C" value="C" />
+                        <label >C)partial </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques31" id="ques31D" value="D" />
+                        <label >D) functional</label>
+                    </div>
+               
+                </li>
+               	<hr id="c2">
+                <li>
+               
+                    <h3>-------------- is created when two differrnt names are used for the same information</h3>
+                   
+                    <div>
+                        <input type="radio" name="ques32" id="ques32A" value="A" />
+                        <label >A) synonyms</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques32" id="ques32B" value="B" />
+                        <label >B)homonyms </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques32" id="ques32C" value="C" />
+                        <label >C)  mutually exclusive data</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques32" id="ques32D" value="D" />
+                        <label >D)  rrdundant information</label>
+                    </div>
+               
+                </li>
+               	<hr id="c2">
+                <li>
+               
+                    <h3>C was developed in the year::</h3>
+                   
+                    <div>
+<input type="radio" name="ques33" id="ques33A" value="A" />
+
+                        <label >A) 1970  </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques33" id="ques33B" value="B" />
+                        <label >B) 1972  </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques33" id="ques33C" value="C" />
+                        <label>C)1976 </label>
+                    </div>
+                   
+                    <div>
+                         <input type="radio" name="ques33" id="ques33D" value="D" />
+                        <label >D) 1995</label>
+                    </div>
+               
+                </li>
+               	<hr id="c2">
+                <li>
+               
+                    <h3>The entity integrity rule states that:</h3>
+                   
+                    <div>
+                        <input type="radio" name="ques34" id="ques34A" value="A" />
+                        <label>A) No primary key attribute can be null   </label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques34" id="ques34B" value="B" />
+                        <label >B)   Each entity must have a primary key
+
+</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques34" id="ques34C" value="C" />
+                        <label >C) Primary key must have only one attribute </label>
+                    </div>
+                   
+                    <div>
+                 <input type="radio" name="ques34" id="ques34D" value="D" />
+                        <label> D) None</label>
+                    </div>
+               
+                </li>
+               	<hr id="c2">
+                <li>
+               
+                    <h3>Which of the following is a decision making statement</h3>
+                   
+                    <div>
+
+
+                        <input type="radio" name="ques35" id="ques35A" value="A" />
+                        <label >A) brrak <label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques35" id="ques35B" value="B" />
+                        <label >B)getch ( ) </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques35" id="ques35C" value="C" />
+                        <label >C) if</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques35" id="ques35D" value="D" />
+                        <label >D)all </label>
+                    </div>
+               
+                </li>
+           	<hr id="c2">
+       
+<li>
+               
+                    <h3>In 3NF, a non key attribute must not depend on a</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques36" id="ques36A" value="A" />
+                        <label >A) non key attribute</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques36" id="ques36B" value="B" />
+                        <label >B) key attribute</label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques36" id="ques36C" value="C" />
+                        <label >C) composite key </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques36" id="ques36D" value="D" />
+                        <label >D) sort key</label>
+                    </div>
+               
+                </li>
+           	<hr id="c2">
+           
+<li>
+               
+                    <h3>The number of bytes used by 'int' data type in C arr:</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques37" id="ques37A" value="A" />
+                        <label >A)  2</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques37" id="ques37B" value="B" />
+                        <label >B) 8</label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques37" id="ques37C" value="C" />
+                        <label >C) 12
+ </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques37" id="ques37D" value="D" />
+                        <label >D)16  </label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+       
+<li>
+               
+                    <h3> Another term for a conditional operator is:</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques38" id="ques38A" value="A" />
+                        <label>A) Ternary </label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques38" id="ques38B" value="B" />
+                        <label >B) Binary</label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques38" id="ques38C" value="C" />
+                        <label >C) Byte  </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques38" id="ques38D" value="D" />
+                        <label >D) Iteration</label>
+                    </div>
+               
+                </li>
+           	<hr id="c2">
+       
+<li>
+
+
+               
+                    <h3>Which format specifier is used for integer data type?</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques39" id="ques39A" value="A" />
+                        <label >A) %d </label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques39" id="ques39B" value="B" />
+                        <label >B) %c </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques39" id="ques39C" value="C" />
+                        <label >C) %s </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques39" id="ques39D" value="D" />
+                        <label >D) %f  </label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+       
+<li>
+               
+                    <h3> The maximum numbers of tables in a database can be:</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques40" id="ques40A" value="A" />
+                        <label >A)  1 </label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques40" id="ques40B" value="B" />
+                        <label >B) 2 </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques40" id="ques40C" value="C" />
+                        <label >C) 3 </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques40" id="ques40D" value="D" />
+                        <label >D) Any</label>
+                    </div>
+               
+                </li>
+           
+  </ul>
+
+           
+            <button type="submit"  value="submit" class="b1">Submit</button>
+ 
+ </form>
+ 
+ </div>
+
+</body>
+ <?php
+    error_reporting(E_ERROR | E_PARSE);
+
+	  $kk21=$_POST['ques21'];
+	  $kk22=$_POST['ques22'];
+       $kk23=$_POST['ques23'];
+	
+	   $kk24=$_POST['ques24'];
+	   $kk25=$_POST['ques25'];
+       $kk26=$_POST['ques26'];
+	 
+	   $kk27=$_POST['ques27'];
+	   $kk28=$_POST['ques28'];
+      $kk29=$_POST['ques29'];
+	 
+	   $kk30=$_POST['ques30'];
+
+
+  $kk31=$_SESSION['ques31'];
+  $kk32=$_SESSION['ques32'];
+  $kk33=$_SESSION['ques33'];
+           
+
+
+  $kk34=$_SESSION['ques34'];
+  $kk35=$_SESSION['ques35'];
+  $kk36=$_SESSION['ques36'];
+
+  $kk37=$_SESSION['ques37'];
+  $kk38=$_SESSION['ques38'];
+  $kk39=$_SESSION['ques39'];
+
+  $kk40=$_SESSION['ques40'];
+             
+			$rev3 = $_SESSION['rev2']; 
+
+            if (  $kk21 == "A") { $rev3++; }
+            if (  $kk22 == "B") { $rev3++; }
+            if (  $kk23 == "C") {$rev3++; }
+		    if (  $kk24 == "D") {$rev3++; }
+			
+            if (  $kk25 == "A") {$rev3++; }
+            if (  $kk26 == "B") {$rev3++; }
+            if (  $kk27 == "C") {$rev3++; }
+            if (  $kk28 == "D") {$rev3++; }
+			
+            if (  $kk29 == "A") {$rev3++; }
+            if (  $kk30 == "B") {$rev3++; }
+    
+
+$_SESSION['rev4'] = $rev3; 
+
+?>
+</html>

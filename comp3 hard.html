@@ -1,0 +1,440 @@
+<html>
+ <?php
+ $s_id = $_GET['score_id'];
+session_start();
+?>
+<head>
+<style>
+
+#c2{
+	margin-right:5%;	
+	
+}
+span{
+margin:15%;
+
+}
+
+
+.m1{
+border-style:groove;
+background-color:white;
+	 border: 5px outset purple;
+margin-left:15%;
+margin-right:15%;
+}
+
+.b1{
+margin-left:40%;
+padding:10px;
+background-color:  #993399;
+color:white;
+font-size:35px;
+  border-radius: 5px;
+  border: 5px solid  #993399;
+
+}
+#c1 {
+  border: 7px solid  #993399;
+  border-radius: 5px;
+  margin:2%;
+}
+
+#demo{
+  margin-left:2%;
+  font-size: 25px;
+  margin-top: 2%;
+  color:#993399;
+}
+</style>
+
+</head>
+<body style="background-color:#f2d9f2;">
+<br>
+ <br>
+ <br>
+ <p><span style="color: #fff; background: purple; padding: 9px;"><b>Questions</b></span></p>
+<script>
+
+var countDownDate = new Date("june 27, 2022 23:59").getTime();
+
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+    
+  var minutes = Math.floor((distance % (1000 * 60 * 40)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("demo").innerHTML = "Time Left: "+ minutes + " min " + seconds + " seconds ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+</script>
+ 
+ <div class="m1">
+ <p id="demo"></p>
+
+ <form   method="POST" action="comp4 hard.php?score_id=<?php echo $s_id; ?>" >
+  <hr id="c1">
+ 
+            <ul>
+                <li>
+               
+                    <h3>Which key does not have uniqueness property?</h3>
+   
+                    <div>
+                        <input type="radio" name="ques21" id="ques21A" value="A" />
+                        <label >A) Candidate  </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques21" id="ques21B" value="B" />
+                        <label >B)Foreign key </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques21" id="ques21C" value="C" />
+                        <label >C)  Primary key </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques21" id="ques21D" value="D" />
+                        <label >D)  Secondary key</label>
+                    </div>
+               
+                </li>
+				<hr id="c2">
+               
+                <li>
+               
+                    <h3>	An disadvantage of partitioning is:</h3>
+                   
+                    <div>
+                        <input type="radio" name="ques22" id="ques22A" value="A" />
+                        <label >A) Complexity</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques22" id="ques22B" value="B" />
+                        <label >B)  Extra space and update time</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques22" id="ques22C" value="C" />
+                        <label >C) Inconsistent access speed </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques22" id="ques22D" value="D" />
+                        <label >D) All</label>
+                    </div>
+               
+                </li>
+				<hr id="c2">
+               
+                <li>
+               
+                    <h3>A factor to consider when choosing a file organization is:</h3>
+                   
+                    <div>
+<input type="radio" name="ques23" id="ques23A" value="A" />
+
+                        <label >A)  Fast retrieval </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques23" id="ques23B" value="B" />
+                        <label >B)Security   </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques23" id="ques23C" value="C" />
+                        <label>C) Efficient storage </label>
+                    </div>
+                   
+                    <div>
+                         <input type="radio" name="ques23" id="ques23D" value="D" />
+                        <label >D) All</label>
+                    </div>
+               
+                </li>
+               <hr id="c2">
+                <li>
+               
+                    <h3>-------------------- defines the nature of the relationship</h3>
+                   
+                    <div>
+                        <input type="radio" name="ques24" id="ques24A" value="A" />
+                        <label>A) cardinality  </label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques24" id="ques24B" value="B" />
+                        <label >B)  entities  
+
+</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques24" id="ques24C" value="C" />
+                        <label >C) modality </label>
+                    </div>
+                   
+                    <div>
+                 <input type="radio" name="ques24" id="ques24D" value="D" />
+                        <label> D)  none of these</label>
+                    </div>
+               
+                </li>
+				<hr id="c2">
+               
+                <li>
+               
+                    <h3> 	Which of the following are ingredients of data modeling?</h3>
+                   
+                    <div>
+
+
+                        <input type="radio" name="ques25" id="ques25A" value="A" />
+                        <label >A) Entities <label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques25" id="ques25B" value="B" />
+                        <label >B) Attributes </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques25" id="ques25C" value="C" />
+                        <label >C) relationship</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques25" id="ques25D" value="D" />
+                        <label >D)All </label>
+                    </div>
+               
+                </li>
+           
+       <hr id="c2">
+<li>
+               
+                    <h3>Which component of physical database design refers to the consistency of data?</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques26" id="ques26A" value="A" />
+                        <label >A) Indexes</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques26" id="ques26B" value="B" />
+                        <label >B)  Integrity constaint</label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques26" id="ques26C" value="C" />
+                        <label >C)  File organization </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques26" id="ques26D" value="D" />
+                        <label >D)  Data distribution strategy</label>
+                    </div>
+               
+                </li>
+           <hr id="c2">
+           
+<li>
+               
+                    <h3>An entity related to itself in an ERD model refers to :</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques27" id="ques27A" value="A" />
+                        <label >A) recursive relationship </label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques27" id="ques27B" value="B" />
+                        <label >B) One-to-many relationship</label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques27" id="ques27C" value="C" />
+                        <label >C)  Many-to-many relationship
+ </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques27" id="ques27D" value="D" />
+                        <label >D)  One-to-one relationship </label>
+                    </div>
+               
+                </li>
+       <hr id="c2">
+<li>
+               
+                    <h3>Which of the following is NOT included in the definition of an entity? </h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques28" id="ques28A" value="A" />
+                        <label>A) Person </label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques28" id="ques28B" value="B" />
+                        <label >B) Object </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques28" id="ques28C" value="C" />
+                        <label >C) Concept </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques28" id="ques28D" value="D" />
+                        <label >D) Action</label>
+                    </div>
+               
+                </li>
+				<hr id="c2">
+           
+       
+<li>
+
+
+               
+                    <h3>Conditional operator is also called:</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques29" id="ques29A" value="A" />
+                        <label >A)True operator </label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques29" id="ques29B" value="B" />
+                        <label >B) Ternary-operator </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques29" id="ques29C" value="C" />
+                        <label >C) Truth operator </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques29" id="ques29D" value="D" />
+                        <label >D)  All of these </label>
+                    </div>
+               
+                </li>
+       <hr id="c2">
+<li>
+               
+                    <h3> A constraint between two attributes is called:</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques30" id="ques30A" value="A" />
+                        <label >A) Functional relation </label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques30" id="ques30B" value="B" />
+                        <label >B)  Attribute dependency </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques30" id="ques30C" value="C" />
+                        <label >C)Functional dependency </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques30" id="ques30D" value="D" />
+                        <label >D)Functional relation constaint </label>
+                    </div>
+               
+                </li>
+           
+                    </ul>
+            <button type="submit"  value="submit" class="b1">Submit</button>
+ 
+ </form>
+ 
+ </div>
+
+</body>
+ <?php
+  error_reporting(E_ERROR | E_PARSE);
+ 	 $time1=$_SESSION['demo'];
+
+	
+	  $shafaq11=$_POST['ques11'];
+	  $shafaq12=$_POST['ques12'];
+      $shafaq13=$_POST['ques13'];
+	
+	  $shafaq14=$_POST['ques14'];
+	  $shafaq15=$_POST['ques15'];
+      $shafaq16=$_POST['ques16'];
+	 
+	  $shafaq17=$_POST['ques17'];
+	  $shafaq18=$_POST['ques18'];
+      $shafaq19=$_POST['ques19'];
+	 
+	  $shafaq20=$_POST['ques20'];
+
+
+  $shafaq21=$_SESSION['ques21'];
+  $shafaq22=$_SESSION['ques22'];
+  $shafaq23=$_SESSION['ques23'];
+           
+
+
+  $shafaq24=$_SESSION['ques24'];
+  $shafaq25=$_SESSION['ques25'];
+  $shafaq26=$_SESSION['ques26'];
+
+  $shafaq27=$_SESSION['ques27'];
+  $shafaq28=$_SESSION['ques28'];
+  $shafaq29=$_SESSION['ques29'];
+
+  $shafaq30=$_SESSION['ques30'];
+                $r_scr1 = $_SESSION['qui_scr'];  
+
+            if (  $shafaq11 == "A") {  $r_scr1++; }
+            if (  $shafaq12 == "B") {  $r_scr1++; }
+            if (  $shafaq13 == "C") {  $r_scr1++; }
+		    if (  $shafaq14 == "D") {  $r_scr1++; }
+			
+            if (  $shafaq15 == "A") {  $r_scr1++; }
+            if (  $shafaq16 == "B") {  $r_scr1++; }
+            if (  $shafaq17 == "C") {  $r_scr1++; }
+            if  ( $shafaq18 == "D") {  $r_scr1++; }
+			
+            if (  $shafaq19 == "A") {  $r_scr1++; }
+            if (  $shafaq20 == "B") {  $r_scr1++; }
+    
+
+$_SESSION['r_scr2'] = $r_scr1;  
+ 
+
+
+?>
+</html>

@@ -1,0 +1,449 @@
+<html>
+<head>
+<style>
+#c2{
+	margin-right:5%;	
+	
+}
+span{
+margin:15%;
+
+}
+
+.m1{
+border-style:groove;
+background-color:white;
+	 border: 5px outset purple;
+
+margin-left:15%;
+margin-right:15%;
+}
+
+.b1{
+margin-left:40%;
+padding:10px;
+background-color:  #993399;
+color:white;
+font-size:35px;
+  border-radius: 5px;
+  border: 5px solid  #993399;
+
+}
+#c1 {
+  border: 7px solid  #993399;
+  border-radius: 5px;
+  margin:2%;
+}
+
+#demo{
+  margin-left:2%;
+  font-size: 25px;
+  margin-top: 2%;
+  color:#993399;
+}
+</style>
+</head>
+<?php
+session_start();
+$s_id = $_GET['score_id'];
+?>
+
+ 
+<body style="background-color:#f2d9f2;">
+ 
+
+ <br>
+ <br>
+ <br>
+ 
+ 
+<p><span style="color: #fff; background: purple; padding: 9px;"><b>Questions</b></span></p>
+<script>
+var countDownDate = new Date("june 27, 2022 23:59").getTime();
+
+var x = setInterval(function() {
+
+
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+    
+  var minutes = Math.floor((distance % (1000 * 60 * 40)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("demo").innerHTML = "Time Left: "+ minutes + " min " + seconds + " seconds ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+</script>
+  <div class="m1">
+ <p id="demo"></p>
+ 
+ <form method="POST" action="physics4  hard.php?score_id=<?php echo $s_id; ?>" >
+
+
+   <hr id="c1">
+    <p id="demo"></p>
+
+
+
+            <ul>
+            
+                <li>
+				
+             
+                    <h3> Conductors have conductivities of order:	</h3>
+                    
+                    <div>
+                        <input type="radio" name="ques21" id="ques21A" value="A" />
+                        <label >A)10<sup>3</sup>(Ωm)-1 </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques21" id="ques21B" value="B" />
+                        <label >B)10<sup>7</sup>(Ωm)<sup>-1</sup></label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques21" id="ques21C" value="C" />
+                        <label >C)10<sup>7</sup>Ωm<sup>-1</sup></label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques21" id="ques21D" value="D" />
+                        <label >D) 10<sup>-6</sup>Ω</label>
+                    </div>
+                
+                </li>
+				       <hr id="c2">
+                
+                <li>
+    
+
+
+
+                    <h3>The ability of a body to return to its original shape is called.
+ </h3>            	
+
+                    
+                    <div>
+                        <input type="radio" name="ques22" id="ques22A" value="A" />
+                        <label >A) Strain</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques22" id="ques22B" value="B" />
+                        <label >B) Stress</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques22" id="ques22C" value="C" />
+                        <label >C)Elasticity</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques22" id="ques22D" value="D" />
+                        <label >D)Plasticity</label>
+                    </div>
+                
+                </li>
+                       <hr id="c2">
+                <li>
+
+                    <h3>	Recently superconductor discovered is at temperature.		</h3>
+                    
+                    <div> 
+					 <input type="radio" name="ques23" id="ques23A" value="A" />
+
+                        <label >A) 110K</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques23" id="ques32B" value="B" />
+                        <label >B)  143K</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques23" id="ques23C" value="C" />
+                        <label >C)16.3K</label>
+                    </div>
+                    
+                    <div>
+                         <input type="radio" name="ques23" id="ques23D" value="D" />
+                        <label >D)  119K</label>
+                    </div>
+                
+                </li>
+                       <hr id="c2">
+                <li>
+           
+                    <h3>The dimension of stress is		</h3>
+                    
+                    <div>
+                        <input type="radio" name="ques24" id="ques24A" value="A" />
+                        <label>A)[MLT<sup>-1</sup>]</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques24" id="ques24B" value="B" />
+                        <label >B)   [ML<sup>-1</sup>T]
+
+</label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques24" id="ques224C" value="C" />
+                        <label >C) [ML<sup>-1</sup>T<sup>-1</sup>] </label>
+                    </div>
+                    
+                    <div>
+                 <input type="radio" name="ques24" id="ques24D" value="D" />
+                        <label> D)[ML<sup>-1</sup>T<sup>-2</sup>]</label>
+                    </div>
+                
+                </li>
+                       <hr id="c2">
+                <li>
+
+                
+                    <h3>Which of the following has least hysteresis loop area.		</h3>
+                    
+                    <div>
+					 
+
+                        <input type="radio" name="ques25" id="ques25A" value="A" />
+                        <label >A) Steel</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques25" id="ques25B" value="B" />
+                        <label >B) Wrought Iron</label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques25" id="ques25C" value="C" />
+                        <label >C)  Soft Iron</label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques25" id="ques25D" value="D" />
+                        <label >D) Cobalt</label>
+                    </div>
+                
+                </li>
+            
+              <hr id="c2">
+			 <li>
+			
+
+
+
+
+
+                
+                    <h3>The material whose resistivity becomes zero below a certain temperature	</h3>
+                    
+                    <div>
+					 
+
+
+ 
+                        <input type="radio" name="ques26" id="ques26A" value="A" />
+                        <label >A) Conductors</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques26" id="ques26B" value="B" />
+                        <label >B)Semi conductors</label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques26" id="ques26C" value="C" />
+                        <label >C) Super conductors</label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques26" id="ques26D" value="D" />
+                        <label >D) Insulators</label>
+                    </div>
+                
+                </li>
+            
+                  <hr id="c2">
+			 <li>
+ 
+                    <h3>To get N-Type the Ge is doped with	</h3>
+                    
+                    <div>
+
+
+                        <input type="radio" name="ques27" id="ques27A" value="A" />
+                        <label >A) Aluminium</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques27" id="ques27B" value="B" />
+                        <label >B)Arsenic </label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques27" id="ques27C" value="C" />
+                        <label >C) Boron </label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques27" id="ques27D" value="D" />
+                        <label >D)Indium</label>
+                    </div>
+                
+                </li>
+               <hr id="c2">
+			 <li>
+
+                
+                    <h3>Recentaly a complex crystalline structure known as yttrium barium copper oxide (Yba<sub>2 </sub>Cu<sub>3 </sub>O<sub>3</sub>) have reported to become super conductor at	</h3>
+                    
+                    <div>
+
+
+
+                        <input type="radio" name="ques28" id="ques28A" value="A" />
+                        <label>A)163 K</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques28" id="ques28B" value="B" />
+                        <label >B)169 K</label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques28" id="ques28C" value="C" />
+                        <label >C)200 K </label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques28" id="ques28D" value="D" />
+                        <label >D) 100 K</label>
+                    </div>
+                
+                </li>
+            
+              <hr id="c2">
+			 <li>
+
+
+                
+                    <h3>Soft magnetic material is		</h3>
+                    
+                    <div>
+
+
+
+                        <input type="radio" name="ques29" id="ques29A" value="A" />
+                        <label >A)Sodium</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques29" id="ques29B" value="B" />
+                        <label >B)Steel</label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques29" id="ques29C" value="C" />
+                        <label >C) Iron</label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques29" id="ques29D" value="D" />
+                        <label >D) Copper</label>
+                    </div>
+                
+                </li>
+               <hr id="c2">
+			 <li>
+                <h3>Which of the modulus of elasticity is involved in compressing a rod to decrease its length ?	</h3>
+                    
+                    <div>
+
+
+
+                        <input type="radio" name="ques30" id="ques30A" value="A" />
+                        <label >A) Young's modulus</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques30" id="ques30B" value="B" />
+                        <label >B)Bulk modulus </label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques30" id="ques30C" value="C" />
+                        <label >C) Modulus of elasticity</label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques30" id="ques30D" value="D" />
+                        <label >D)None of these</label>
+                    </div>
+                
+                </li>
+            
+            </ul>
+
+            
+             <input type="submit" value="Submit" class="b1" >
+ 
+ </form>
+ 
+ </div>
+ 
+ 
+</body>
+ <?php
+
+error_reporting(E_ERROR | E_PARSE);
+$answer11 = $_POST['ques11'];
+$answer12 = $_POST['ques12'];
+$answer13 = $_POST['ques13'];
+$answer14 = $_POST['ques14'];
+$answer15 = $_POST['ques15'];
+$answer16 = $_POST['ques16'];
+$answer17 = $_POST['ques17'];
+$answer18 = $_POST['ques18'];
+$answer19 = $_POST['ques19'];
+$answer20 = $_POST['ques20'];
+
+
+$answer21=$_SESSION['ques21'];
+	 $answer22=$_SESSION['ques22'];
+     $answer23=$_SESSION['ques23'];
+		 $answer24=$_SESSION['ques24'];
+	 $answer25=$_SESSION['ques25'];
+     $answer26=$_SESSION['ques26'];
+	  $answer27=$_SESSION['ques27'];
+	 $answer28=$_SESSION['ques28'];
+     $answer29=$_SESSION['ques29'];
+        $answer30=$_SESSION['ques30']; 
+		$abc = $_SESSION['totalCorrect'];  
+            if ($answer11 == "B") { $abc++; }
+            if ($answer12 == "B") { $abc++; }
+            if ($answer13 == "B") { $abc++; }
+		  if ($answer14 == "B") { $abc++; }
+            if ($answer15 == "B") { $abc++; }
+            if ($answer16 == "B") { $abc++; }
+			if ($answer17 == "B") { $abc++; }
+            if ($answer18 == "B") { $abc++; }
+            if ($answer19 == "B") { $abc++; }
+if ($answer20 == "B") { $abc++; }
+$_SESSION['cde'] = $abc;  
+ 
+           
+		
+
+
+?>
+</html>
+
+      

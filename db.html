@@ -1,0 +1,359 @@
+<head>
+<style>
+
+
+.abc{
+	background-color:white;
+	 border: 7px outset purple;
+margin:10%;
+	padding:3%;
+	 text-align: center;
+	  font-size:35px;
+}
+.b1{
+
+background-color:  #993399;
+color:white;
+padding:10px;
+font-size:25px;
+  border-radius: 5px;
+  border: 5px solid  #993399;
+
+}
+
+</style>
+</head>
+
+<body style="background-color:#f2d9f2;">
+<form method="post"   >
+ 
+ <div class="abc">
+<h1>Database</h1>
+
+  <input type="submit"  name="submit" value="physics easysubmit to database" class="b1">&nbsp&nbsp&nbsp
+  <input type="submit"  name="sub"    value="physics hardsubmit to database" class="b1">&nbsp&nbsp&nbsp <br><br>
+  <input type="submit"  name="fatyma" value="english hardsubmit to database" class="b1">&nbsp&nbsp&nbsp
+  <input type="submit"  name="laiba"  value="english easysubmit to database" class="b1">&nbsp&nbsp&nbsp <br><br>
+  <input type="submit"  name="musfira"value="Maths hard submit  to database" class="b1">&nbsp&nbsp&nbsp
+  <input type="submit"  name="shafaq" value="Maths easy submit  to database" class="b1">&nbsp&nbsp&nbsp <br><br>
+  <input type="submit" name="mukashaf"value="compu  hard submit  to database" class="b1">&nbsp&nbsp&nbsp
+  <input type="submit"  name="db"      value="compu easy submit to database" class="b1">&nbsp&nbsp&nbsp
+</div>
+
+<?php
+error_reporting(E_ERROR | E_PARSE);
+session_start();
+$laiba = $_SESSION['n'];
+  $try = $_SESSION['g'];
+   $men = $_SESSION['men'];
+      $wed = $_SESSION['tues'];
+	    $home = $_SESSION['hhhh'];
+		 $door = $_SESSION['dddd'];
+		  $juice = $_SESSION['jjjj'];
+		   $kitchen = $_SESSION['kkkk'];
+$d = $_GET['score_id'];
+if(isset($_POST["submit"]))
+{
+$link = mysqli_connect("localhost", "root", "", "result");
+
+if($link === false)
+{
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+
+
+
+
+
+$sql = "INSERT INTO physics_easy_score (phy_easy_score,login_id) VALUES ( '$laiba','$d')";
+
+if(mysqli_query($link, $sql))
+{
+    
+	 
+}
+
+else
+{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+
+mysqli_close($link);
+
+
+
+
+
+}
+
+
+?>
+<?php
+if(!empty($_POST["sub"]))
+{
+$link = mysqli_connect("localhost", "root", "", "result");
+
+if($link === false)
+{
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+
+
+
+
+
+$sql = "INSERT INTO phy_hard_score (phy_hard_score,login_id) VALUES ( '$try','$d')";
+
+if(mysqli_query($link, $sql))
+{
+   
+	 
+}
+
+else
+{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+
+mysqli_close($link);
+
+
+
+
+
+}
+
+
+?>
+
+ 
+  <?php
+  
+if(!empty($_POST["fatyma"]))
+{
+$link = mysqli_connect("localhost", "root", "", "result");
+
+if($link === false)
+{
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+
+
+
+
+
+$sql = "INSERT INTO eng_hard_score(eng_hard_score,login_id) VALUES ( '$men','$d')";
+
+if(mysqli_query($link, $sql))
+{
+   
+	 
+}
+
+else
+{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+
+mysqli_close($link);
+
+
+
+
+
+}
+?>
+
+ <?php
+  
+if(!empty($_POST["laiba"]))
+{
+$link = mysqli_connect("localhost", "root", "", "result");
+
+if($link === false)
+{
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+
+
+
+
+
+$sql = "INSERT INTO eng_easy_score(eng_easy_score,login_id) VALUES ( '$wed','$d')";
+
+if(mysqli_query($link, $sql))
+{
+   
+	 
+}
+
+else
+{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+
+mysqli_close($link);
+
+
+
+
+
+}
+
+
+?>
+ <?php
+  
+if(!empty($_POST["db"]))
+{
+$link = mysqli_connect("localhost", "root", "", "result");
+
+if($link === false)
+{
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+
+
+
+
+
+$sql = "INSERT INTO computer_easy_score(computer_easy_score,login_id) VALUES ( '$home','$d')";
+
+if(mysqli_query($link, $sql))
+{
+   
+	 
+}
+
+else
+{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+
+mysqli_close($link);
+
+
+
+
+
+}
+
+
+?>
+ <?php
+  
+if(!empty($_POST["mukashaf"]))
+{
+$link = mysqli_connect("localhost", "root", "", "result");
+
+if($link === false)
+{
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+
+
+
+
+
+$sql = "INSERT INTO computer_hard_score(computer_hard_score,login_id) VALUES ( '$door','$d')";
+
+if(mysqli_query($link, $sql))
+{
+   
+	 
+}
+
+else
+{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+
+mysqli_close($link);
+
+
+
+
+
+}
+
+
+?>
+ <?php
+  
+if(!empty($_POST["shafaq"]))
+{
+$link = mysqli_connect("localhost", "root", "", "result");
+
+if($link === false)
+{
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+
+
+
+
+
+$sql = "INSERT INTO maths_easy_score(maths_easy_score,login_id) VALUES ( '$juice','$d')";
+
+if(mysqli_query($link, $sql))
+{
+   
+	 
+}
+
+else
+{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+
+mysqli_close($link);
+
+
+
+
+
+}
+
+
+?>
+ <?php
+  
+if(!empty($_POST["musfira"]))
+{
+$link = mysqli_connect("localhost", "root", "", "result");
+
+if($link === false)
+{
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+
+
+
+
+
+$sql = "INSERT INTO maths_hard_score(maths_hard_score,login_id) VALUES ( '$kitchen','$d')";
+
+if(mysqli_query($link, $sql))
+{
+   
+	 
+}
+
+else
+{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+
+mysqli_close($link);
+
+
+
+
+
+}
+
+
+?>
+
+
+</html>

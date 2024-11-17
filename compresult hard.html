@@ -1,0 +1,90 @@
+<html>
+<?php
+
+
+$s_id = $_GET['score_id'];
+?>
+<?php
+ error_reporting(E_ERROR | E_PARSE);
+ session_start();
+
+  $shafaq31=$_POST['ques31'];
+  $shafaq32=$_POST['ques32'];
+  $shafaq33=$_POST['ques33'];
+           
+
+
+  $shafaq34=$_POST['ques34'];
+  $shafaq35=$_POST['ques35'];
+  $shafaq36=$_POST['ques36'];
+
+  $shafaq37=$_POST['ques37'];
+  $shafaq38=$_POST['ques38'];
+  $shafaq39=$_POST['ques39'];
+  $shafaq40=$_POST['ques40'];
+ 
+$result_fin = $_SESSION['r_scr4'];
+
+            if ($shafaq31 == "A") { $result_fin++; }
+            if ($shafaq32 == "B") { $result_fin++; }
+            if ($shafaq33 == "C") { $result_fin++; }
+		    if ($shafaq34 == "D") { $result_fin++; }
+			
+            if ($shafaq35 == "A"){ $result_fin++; }
+            if ($shafaq36 == "B") {$result_fin++; }
+            if ($shafaq37 == "C") {$result_fin++; }
+            if ($shafaq38 == "D") {$result_fin++; }
+			
+            if ($shafaq39 == "A") {$result_fin++; }
+            if ($shafaq40 == "B"){ $result_fin++; }
+    
+          $_SESSION['dddd'] = $result_fin; 
+ 
+
+?>
+<head>
+<style>
+
+.abc{
+	background-color:white;
+	 border: 7px outset purple;
+margin:13%;
+	padding:3%;
+	  text-align: center;
+	  font-size:35px;
+}
+.b1{
+display:center;
+background-color:  #993399;
+color:white;
+padding:10px;
+font-size:35px;
+  border-radius: 5px;
+  border: 5px solid  #993399;
+
+}
+</head>
+</style>
+<body style="background-color:#f2d9f2;">
+ <div class="abc">
+ <?php
+ echo "Your score is: ".$result_fin."/40";
+ 
+ if($result_fin < 25)
+{
+	echo '<h2>You need to score at least 50% to pass the quiz.</h2>';
+}
+else {
+	echo '<h2>You have passed the quiz and scored '.$result_fin.'.</h2>';
+}
+ 
+ 
+ ?>
+  <form method="post"  action="db.php?score_id=<?php echo $s_id; ?>"  >
+
+  <button type="submit"  name="submit" value="submit" class="b1">Submit</button>
+
+</form>
+ </div>
+</body>
+</html>

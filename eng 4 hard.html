@@ -1,0 +1,445 @@
+
+<html>
+<head>
+<style>
+#c2{
+	margin-right:5%;	
+	
+}
+span{
+margin:15%;
+
+}
+
+.m1{
+border-style:groove;
+background-color:white;
+	 border: 5px outset purple;
+
+margin-left:15%;
+margin-right:15%;
+}
+
+.b1{
+margin-left:40%;
+padding:10px;
+background-color:  #993399;
+color:white;
+font-size:35px;
+  border-radius: 5px;
+  border: 5px solid  #993399;
+
+}
+#c1 {
+  border: 7px solid  #993399;
+  border-radius: 5px;
+  margin:2%;
+}
+
+#demo{
+  margin-left:2%;
+  font-size: 25px;
+  margin-top: 2%;
+  color:#993399;
+}
+</style>
+</head>
+<?php
+
+
+$s_id = $_GET['score_id'];
+?>
+<?php
+session_start();
+?>
+ 
+<body style="background-color:#f2d9f2;">
+ 
+
+ 
+<br>
+ <br>
+ <br>
+ 
+ <p><span style="color: #fff; background: purple; padding: 9px;"><b>Questions</b></span></p>
+ <script>
+ var countDownDate = new Date("june 27, 2022 23:59").getTime();
+
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+    
+  var minutes = Math.floor((distance % (1000 * 60 * 40)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("demo").innerHTML = "Time Left: "+ minutes + " min " + seconds + " seconds ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+</script>
+  <div class="m1">
+ <p id="demo"></p>
+  <form method="POST" action="result eng hard.php?score_id=<?php echo $s_id; ?>" >
+  <hr id="c1">
+    <p id="demo"></p>
+
+
+
+
+
+            <ul>
+            
+                <li>
+
+                    <h3>One black sheep can <u>contaminate</u> others.</h3>
+                    
+                    <div>
+                        <input type="radio" name="ques31" id="ques31A" value="A" />
+                        <label >A) Spoil </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques31" id="ques31B" value="B" />
+                        <label >B)Terminate</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques31" id="ques31C" value="C" />
+                        <label >C)Pollute</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques31" id="ques31D" value="D" />
+                        <label >D) Mislead</label>
+                    </div>
+                
+                </li>
+                <hr id="c2">
+                <li>
+          
+                    <h3>Some people were sanding the __________thing to the soldiers.	</h3>
+                    
+                    <div>
+                        <input type="radio" name="ques32" id="ques32A" value="A" />
+                        <label >A) Oldest</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques32" id="ques32B" value="B" />
+                        <label >B) Oddest</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques32" id="ques32C" value="C" />
+                        <label >C)Extra</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques32" id="ques32D" value="D" />
+                        <label >D) Most unwanted</label>
+                    </div>
+                
+                </li>
+                <hr id="c2">
+                <li>
+				
+  
+                    <h3>The police acquitted me <u>apparently</u>.	</h3>
+                    
+                    <div> 
+					 <input type="radio" name="ques33" id="ques33A" value="A" />
+
+                        <label >A)  Really</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques33" id="ques33B" value="B" />
+                        <label >B) Cutwardy</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques33" id="ques33C" value="C" />
+                        <label >C)Cutwardy</label>
+                    </div>
+                    
+                    <div>
+                         <input type="radio" name="ques33" id="ques33D" value="D" />
+                        <label >D)Directly</label>
+                    </div>
+                
+                </li>
+                <hr id="c2">
+                <li>
+
+                    <h3>I <u>improvised </u>a sack .</h3>
+                    
+                    <div>
+                        <input type="radio" name="ques34" id="ques34A" value="A" />
+                        <label>A) Made up</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques34" id="ques34B" value="B" />
+                        <label >B)  Arranged
+
+</label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques34" id="ques34C" value="C" />
+                        <label >C)Provided </label>
+                    </div>
+                    
+                    <div>
+                 <input type="radio" name="ques34" id="ques34D" value="D" />
+                        <label> D)Found</label>
+                    </div>
+                
+                </li>
+                <hr id="c2">
+                <li>
+                
+                    <h3>I sprang back from the wall and began walking with an air of <u>rumination</u></h3>
+                    
+                    <div>
+
+
+                        <input type="radio" name="ques35" id="ques35A" value="A" />
+                        <label >A) sad feeling</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques35" id="ques35B" value="B" />
+                        <label >B) deep thought</label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques35" id="ques35C" value="C" />
+                        <label >C)  clever planing</label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques35" id="ques35D" value="D" />
+                        <label >D)  deep joy</label>
+                    </div>
+                
+                </li>
+            <hr id="c2">
+       
+			 <li>
+                
+                    <h3>It is almost as hopeless to try to burn a book without opening it as to try to burn a piece of.	</h3>
+                    
+                    <div>
+					 
+
+
+                        <input type="radio" name="ques36" id="ques36A" value="A" />
+                        <label >A). sponge </label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques36" id="ques36B" value="B" />
+                        <label >B) Paper</label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques36" id="ques36C" value="C" />
+                        <label >C)granite </label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques36" id="ques36D" value="D" />
+                        <label >D) Chalk</label>
+                    </div>
+                
+                </li>
+            
+           <hr id="c2">
+			 <li>
+                
+                    <h3>I turned up my overcoat collar, settled my sack comfortably across my ________	</h3>
+                    
+                    <div>
+					 
+
+
+
+                        <input type="radio" name="ques37" id="ques37A" value="A" />
+                        <label >A) hands</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques37" id="ques37B" value="B" />
+                        <label >B)noses </label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques37" id="ques37C" value="C" />
+                        <label >C)feet</label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques37" id="ques37D" value="D" />
+                        <label >D) shoulders</label>
+                    </div>
+                
+                </li>
+        <hr id="c2">
+			 <li>
+                
+                    <h3>She is fond............ singing		</h3>
+                    
+                    <div>
+
+
+
+                        <input type="radio" name="ques38" id="ques38A" value="A" />
+                        <label>A)with</label>
+                    </div>
+             <div>
+                      <input type="radio" name="ques38" id="ques38B" value="B" />
+                        <label >B) to</label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques38" id="ques38C" value="C" />
+                        <label >C)at </label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques38" id="ques38D" value="D" />
+                        <label >D) of
+       </label>
+                    </div>
+                
+                </li>
+            
+       
+			 <li>
+
+
+                
+                    <h3>	The implications of my act <u>revealed</u>themselves.</h3>
+                    
+                    <div>
+					 
+
+
+                        <input type="radio" name="ques39" id="ques39A" value="A" />
+                        <label >A)Explained</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques39" id="ques39B" value="B" />
+                        <label >B) Indicated </label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques39" id="ques39C" value="C" />
+                        <label >C)  Showed</label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques39" id="ques39D" value="D" />
+                        <label >D)  Suggested</label>
+                    </div>
+                
+                </li>
+        
+			 <li>
+                
+                    <h3>I was faced with ............ of either evicting the books or else taking rooms elsewhere for myself.	</h3>
+                    
+                    <div>
+					 
+
+
+                        <input type="radio" name="ques40" id="ques40A" value="A" />
+                        <label >A)automative</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques40" id="ques40B" value="B" />
+                        <label >B)All together</label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques40" id="ques40C" value="C" />
+                        <label >C) Alternative</label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques40" id="ques40D" value="D" />
+                        <label >D) Altogether</label>
+                    </div>
+                
+                </li>
+            
+            </ul>
+
+            
+         <input type="submit" value="Submit" class="b1" />
+ 
+ </form>
+ 
+ </div>
+ 
+ 
+</body>
+<?php
+
+error_reporting(E_ERROR | E_PARSE);
+
+
+$mango21 = $_POST['ques21'];
+$mango22 = $_POST['ques22'];
+$mango23 = $_POST['ques23'];
+$mango24 = $_POST['ques24'];
+$mango25 = $_POST['ques25'];
+$mango26 = $_POST['ques26'];
+$mango27 = $_POST['ques27'];
+$mango28 = $_POST['ques28'];
+$mango29 = $_POST['ques29'];
+$mango30 = $_POST['ques30'];
+
+
+$mango31=$_SESSION['ques31'];
+	 $mango32=$_SESSION['ques32'];
+     $mango33=$_SESSION['ques33'];
+		 $mango34=$_SESSION['ques34'];
+	 $mango35=$_SESSION['ques35'];
+     $mango36=$_SESSION['ques36'];
+	  $mango37=$_SESSION['ques37'];
+	 $mango38=$_SESSION['ques38'];
+     $mango39=$_SESSION['ques39'];
+        $mango40=$_SESSION['ques40']; 
+		$carl = $_SESSION['amarha']; 
+            if ($mango21 == "C") { $carl++; }
+            if ($mango22 == "C") { $carl++; }
+            if ($mango23 == "C") { $carl++; }
+		  if ($mango24 == "C") { $carl++;}
+            if ($mango25 == "C") { $carl++; }
+            if ($mango26 == "C") {$carl++; }
+			if ($mango27 == "C") { $carl++; }
+            if ($mango28 == "C") { $carl++;}
+            if ($mango29 == "C") { $carl++;}
+            if ($mango30 == "C") { $carl++; }
+  
+           
+		$_SESSION['manchester'] = $carl;  
+
+         
+
+
+
+?>
+
+</html>
+
+      

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registeration</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript"></script>
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  width:100%;
+}
+.centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="https://images.unsplash.com/photo-1616001089004-04948fc0e6c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" style="width:100%;">
+  
+  <div class="centered">
+       <div class="tag">
+	   <div class="container">
+<div class="row text-center text-xs-center text-sm-left text-md-left">
+<form method="post">
+<center>
+	<h1> <b>Log In</b> </h1>
+	<hr>	
+<div class="col-md-12">
+<div class="md-form form-group">
+	<p style="font-size: 18px;"><b>EMAIL</b></p>     
+    <input type="email" name="email" id="email" placeholder="login_username"required=""class="form-control" >
+</div></div>
+<div class="col-md-12">
+<div class="md-form form-group">
+    <p style="font-size: 18px;"><b>Password:</b></p>
+    <input type="password"name="password""id="Pass" placeholder="Password"/required=""class="form-control"></div></div><br><br>  
+	<button type="submit" name="Register"  value="Register" class="btn btn-secondary">LOGIN</button>  	  	
+</div>
+</form>
+</center>	
+</div></div>
+</div>
+</body>
+</html> 
+
+
+
+
+
+<?php
+
+
+if(isset($_POST["Register"]))
+{
+$link = mysqli_connect("localhost", "root", "", "result");
+
+if($link === false)
+{
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+$b = $_POST['email'];
+$c= $_POST['password'];
+$sql = "Select * from register where email = '$b' && password =  '$c'";
+$result = mysqli_query($link, $sql);
+
+if (mysqli_num_rows($result) > 0) 
+{
+  while($row = mysqli_fetch_assoc($result)) 
+  {
+
+   header("location:h.php?score_id=".$row['login_id']);
+    
+	exit();
+  }
+} 
+else
+{
+	//   header("location: log.php");
+
+   // echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+	echo "<script>alert('Wrong Credientials'); </script>" ;
+	//header("location: log.php");
+}
+
+mysqli_close($link);
+}
+?>
+</html>

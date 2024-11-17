@@ -1,0 +1,452 @@
+
+
+<head>
+ <style>
+#c2{
+	margin-right:5%;	
+	
+}
+span{
+margin:15%;
+
+}
+
+.m1{
+border-style:groove;
+background-color:white;
+	 border: 5px outset purple;
+
+margin-left:15%;
+margin-right:15%;
+}
+
+.b1{
+margin-left:40%;
+padding:10px;
+background-color:  #993399;
+color:white;
+font-size:35px;
+  border-radius: 5px;
+  border: 5px solid  #993399;
+
+}
+#c1 {
+  border: 7px solid  #993399;
+  border-radius: 5px;
+  margin:2%;
+}
+
+#demo{
+  margin-left:2%;
+  font-size: 25px;
+  margin-top: 2%;
+  color:#993399;
+}
+</style>
+</head>
+ <?php
+session_start();
+$s_id = $_GET['score_id'];
+?>
+<body style="background-color:#f2d9f2;"> 
+
+ 
+ <br>
+ <br>
+ <br>
+ 
+<p><span style="color: #fff; background: purple; padding: 9px;"><b>Questions</b></span></p>
+<script>
+var countDownDate = new Date("june 27, 2022 23:59").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+    
+  var minutes = Math.floor((distance % (1000 * 60 * 40)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("demo").innerHTML = "Time Left: "+ minutes + " min " + seconds + " seconds ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+</script>
+  <div class="m1">
+ <p id="demo"></p>
+ 
+ <form  method="POST" action="result phy hard.php?score_id=<?php echo $s_id; ?>">
+
+
+   <hr id="c1">
+    <p id="demo"></p>
+
+
+
+
+            <ul>
+			
+         
+                <li>
+
+                    <h3>Photo diode detects.</h3>
+                    
+                    <div>
+                        <input type="radio" name="ques31" id="ques31A" value="A" />
+                        <label >A) Visible light </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques31" id="ques31B" value="B" />
+                        <label >B)Radio waves</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques31" id="ques31C" value="C" />
+                        <label >C)X rays</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques31" id="ques31D" value="D" />
+                        <label >D) All of them</label>
+                    </div>
+                
+                </li>
+                       <hr id="c2">
+                <li>
+
+                    <h3>Photodiode is used for</h3>
+                    
+                    <div>
+                        <input type="radio" name="ques32" id="ques32A" value="A" />
+                        <label >A) Detection of current</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques32" id="ques32B" value="B" />
+                        <label >B) Detection of heat</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques32" id="ques32C" value="C" />
+                        <label >C)Detection of light</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques32" id="ques32D" value="D" />
+                        <label >D) Both a & b</label>
+                    </div>
+                
+                </li>
+                       <hr id="c2">
+                <li>
+
+  
+                    <h3>NAND gate represented by:	</h3>
+                    
+                    <div> 
+					 <input type="radio" name="ques33" id="ques33A" value="A" />
+
+                        <label >A)   X = A. B</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques33" id="ques33B" value="B" />
+                        <label >B) X = A+B</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="ques33" id="ques33C" value="C" />
+                        <label >C) X= |A.B|</label>
+                    </div>
+                    
+                    <div>
+                         <input type="radio" name="ques33" id="ques33D" value="D" />
+                        <label >D)X=|A+B|</label>
+                    </div>
+                
+                </li>
+                       <hr id="c2">
+                <li>
+
+
+
+
+                    <h3>A two inputs NAND gat with inputs a and b has an output '0' if.	.</h3>
+                    
+                    <div>
+                        <input type="radio" name="ques34" id="ques34A" value="A" />
+                        <label>A) B is zero</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques34" id="ques34B" value="B" />
+                        <label >B)  A is zero
+
+</label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques34" id="ques34C" value="C" />
+                        <label >C) Both A and B are 1</label>
+                    </div>
+                    
+                    <div>
+                 <input type="radio" name="ques34" id="ques34D" value="D" />
+                        <label> D)Both A and B are '0'</label>
+                    </div>
+                
+                </li>
+				       <hr id="c2">
+            <li>
+                
+                    <h3>X=A+B is the mathematical notation for.	</h3>
+                    
+                    <div>
+
+
+                        <input type="radio" name="ques35" id="ques35A" value="A" />
+                        <label >A)  OR gate</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques35" id="ques35B" value="B" />
+                        <label >B) NOR gate</label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques35" id="ques35C" value="C" />
+                        <label >C)  NAND gate</label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques35" id="ques35D" value="D" />
+                        <label >D) AND gate</label>
+                    </div>
+                
+                </li>
+                   <hr id="c2">
+       
+			 <li>
+
+                    <h3>The number of terminals in a semiconductor diode are	</h3>
+                    
+                    <div>
+					 
+
+
+                        <input type="radio" name="ques36" id="ques36A" value="A" />
+                        <label >A). 2 </label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques36" id="ques36B" value="B" />
+                        <label >B) 3</label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques36" id="ques36C" value="C" />
+                        <label >C)4</label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques36" id="ques36D" value="D" />
+                        <label >D) 5</label>
+                    </div>
+                
+                </li>
+                   <hr id="c2">
+           
+			 <li>
+               
+
+                    <h3>The gain of transistor amplifier depends upon</h3>
+                    
+                    <div>
+					 
+
+
+
+                        <input type="radio" name="ques37" id="ques37A" value="A" />
+                        <label >A)  Resistance connected with collector</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques37" id="ques37B" value="B" />
+                        <label >B)Resistance connected with base voltage </label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques37" id="ques37C" value="C" />
+                        <label >C)Input voltage</label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques37" id="ques37D" value="D" />
+                        <label >D) Output voltage</label>
+                    </div>
+                
+                </li>
+               <hr id="c2">
+			 <li>
+
+
+
+
+                    <h3>Which device is used as a rectifier?	</h3>
+                    
+                    <div>
+
+
+
+                        <input type="radio" name="ques38" id="ques38A" value="A" />
+                        <label>A)Capacitor</label>
+                    </div>
+             <div>
+                      <input type="radio" name="ques38" id="ques38B" value="B" />
+                        <label >B) Transistor</label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques38" id="ques38C" value="C" />
+                        <label >C)Diode</label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques38" id="ques38D" value="D" />
+                        <label >D) Transformer
+       </label>
+                    </div>
+                
+                </li>
+                   <hr id="c2">
+       
+			 <li>
+
+
+
+                    <h3>	Base of transistor is of order:	</h3>
+                    
+                    <div>
+					 
+
+
+                        <input type="radio" name="ques39" id="ques39A" value="A" />
+                        <label >A) 10<sup>-11</sup>m</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques39" id="ques39B" value="B" />
+                        <label >B) 10<sup>6</sup>m </label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques39" id="ques39C" value="C" />
+                        <label >C)  10<sup>-8</sup>m</label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques39" id="ques39D" value="D" />
+                        <label >D)  10<sup>-6</sup>m</label>
+                    </div>
+                
+                </li>
+       <hr id="c2">
+			 <li>
+                
+                    <h3>One use of a single p-n junction semiconductor in an electrical circuit is a	</h3>
+                    
+                    <div>
+					 
+
+
+                        <input type="radio" name="ques40" id="ques40A" value="A" />
+                        <label >A) Rectifier</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="ques40" id="ques40B" value="B" />
+                        <label >B)Transistor</label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="ques40" id="ques40C" value="C" />
+                        <label >C) Battery</label>
+                    </div>
+                    
+                    <div>
+                       <input type="radio" name="ques40" id="ques40D" value="D" />
+                        <label >D)  Diode</label>
+                    </div>
+                
+                </li>
+            
+            </ul>
+
+            
+       <input type="submit" value="Submit" class="b1" >
+ 
+ </form>
+ 
+ </div>
+ 
+ 
+</body>
+ <?php
+
+error_reporting(E_ERROR | E_PARSE);
+
+
+$answer21 = $_POST['ques21'];
+$answer22 = $_POST['ques22'];
+$answer23 = $_POST['ques23'];
+$answer24 = $_POST['ques24'];
+$answer25 = $_POST['ques25'];
+$answer26 = $_POST['ques26'];
+$answer27 = $_POST['ques27'];
+$answer28 = $_POST['ques28'];
+$answer29 = $_POST['ques29'];
+$answer30 = $_POST['ques30'];
+
+
+$answer31=$_SESSION['ques31'];
+	 $answer32=$_SESSION['ques32'];
+     $answer33=$_SESSION['ques33'];
+		 $answer34=$_SESSION['ques34'];
+	 $answer35=$_SESSION['ques35'];
+     $answer36=$_SESSION['ques36'];
+	  $answer37=$_SESSION['ques37'];
+	 $answer38=$_SESSION['ques38'];
+     $answer39=$_SESSION['ques39'];
+        $answer40=$_SESSION['ques40']; 
+		$efg = $_SESSION['cde']; 
+            if ($answer21 == "C") { $efg++; }
+            if ($answer22 == "C") { $efg++; }
+            if ($answer23 == "C") { $efg++; }
+		  if ($answer24 == "C") { $efg++;}
+            if ($answer25 == "C") { $efg++; }
+            if ($answer26 == "C") {$efg++; }
+			if ($answer27 == "C") { $efg++; }
+            if ($answer28 == "C") { $efg++;}
+            if ($answer29 == "C") { $efg++;}
+            if ($answer30 == "C") { $efg++; }
+  
+           
+		$_SESSION['hij'] = $efg;  
+
+         
+
+
+
+?>
+
+</html>
+
+
+
+
+
+

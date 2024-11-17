@@ -1,0 +1,409 @@
+<html>
+ <?php
+ 
+ $s_id = $_GET['score_id'];
+session_start();
+?>
+<head>
+<style>
+
+#c2{
+	margin-right:5%;	
+	
+}
+span{
+margin:15%;
+
+}
+
+.m1{
+border-style:groove;
+background-color:white;
+	 border: 5px outset purple;
+
+margin-left:15%;
+margin-right:15%;
+}
+
+.b1{
+margin-left:40%;
+padding:10px;
+background-color:  #993399;
+color:white;
+font-size:35px;
+  border-radius: 5px;
+  border: 5px solid  #993399;
+
+}
+</style>
+
+<head>
+<body style="background-color:#f2d9f2;">
+<br>
+ <br>
+ <br>
+ <p><span style="color: #fff; background: purple; padding: 9px;"><b>Questions</b></span></p>
+
+ 
+ <div class="m1">
+ <form method="POST" action="math3 easy.php?score_id=<?php echo $s_id; ?>" >
+
+            <ul>
+           
+                <li>
+               
+                    <h3 >If the graph of f is entirely above the x-axis, then the definite integral is _______:</h3>
+   
+                    <div>
+                        <input type="radio" name="ques11" id="ques11A" value="A" />
+                        <label >A)   Positive</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques11" id="ques11B" value="B" />
+                        <label >B) Positive or negative</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques11" id="ques11C" value="C" />
+                        <label >C) Negative</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques11" id="ques11D" value="D" />
+                        <label >D) Positive and negative<</label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+               
+                <li>
+               
+                    <h3>The term dy (or df) = f '(x) dx is called the __________ of the dependent variable y</h3>
+                   
+                    <div>
+                        <input type="radio" name="ques12" id="ques12A" value="A" />
+                        <label >A) Differentiation</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques12" id="ques12B" value="B" />
+                        <label >B)Integration </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques12" id="ques12C" value="C" />
+                        <label >C) Differential</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques12" id="ques12D" value="D" />
+                        <label >D). None of these </label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+               
+                <li>
+               
+                    <h3 >Point of intersection of x + y = 5 &amp; x - y = 3 is:</h3>
+                   
+                    <div>
+<input type="radio" name="ques13" id="ques13A" value="A" />
+
+                        <label >A)(5, 5)  </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques13" id="ques13B" value="B" />
+                        <label >B) (4, 2)  </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques13" id="ques13C" value="C" />
+                        <label>C)(4, 1)  </label>
+                    </div>
+                   
+                    <div>
+                         <input type="radio" name="ques13" id="ques13D" value="D" />
+                        <label >D)  (1, 4) </label>
+                    </div>
+               
+                </li>
+               	<hr id="c2">
+                <li>
+               
+                    <h3 >If the directed distances AP and PB have the opposite signs, i.e; p is beyond AB, then their ratio is negative and P is said to divide AB.</h3>
+                   
+                    <div>
+                        <input type="radio" name="ques14" id="ques14A" value="A" />
+                        <label>A)  Internally  </label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques14" id="ques14B" value="B" />
+                        <label >B) May divide 
+
+</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques14" id="ques14C" value="C" />
+                        <label >C) Externally</label>
+                    </div>
+                   
+                    <div>
+                 <input type="radio" name="ques14" id="ques14D" value="D" />
+                        <label> D) None of these</label>
+                    </div>
+               
+                </li>
+               	<hr id="c2">
+                <li>
+               
+                    <h3>A pair of lines of homogeneous second degree equation ax<sup>2</sup> + 2hxy + by<sup>2</sup> = 0 are othogonal, if:</h3>
+                   
+                    <div>
+
+
+                        <input type="radio" name="ques15" id="ques15A" value="A" />
+                        <label >A)a - b = 0 <label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques15" id="ques15B" value="B" />
+                        <label >B) a + b = 0 </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques15" id="ques15C" value="C" />
+                        <label >C)a + b &gt; 0 </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques15" id="ques15D" value="D" />
+                        <label >D)a - b &lt; 0 </label>
+                    </div>
+               
+                </li>
+           	<hr id="c2">
+       
+<li>
+               
+                    <h3 >The horizontal line x' ox is called:</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques16" id="ques16A" value="A" />
+                        <label >A)x-axis</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques16" id="ques16B" value="B" />
+                        <label >B) y-axis </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques16" id="ques16C" value="C" />
+                        <label >C) abscissa</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques16" id="ques16D" value="D" />
+                        <label >D)ordinate </label>
+                    </div>
+               
+                </li>
+           	<hr id="c2">
+           
+<li>
+               
+                    <h3 >A linear equation in two variables represents:</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques17" id="ques17A" value="A" />
+                        <label >A) Circle</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques17" id="ques17B" value="B" />
+                        <label >B)Ellipse</label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques17" id="ques17C" value="C" />
+                        <label >C) C. Hyberbola
+ </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques17" id="ques17D" value="D" />
+                        <label >D)Straight line  </label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+       
+<li>
+               
+                    <h3>In the translation of axes which formula is true: </h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques18" id="ques18A" value="A" />
+                        <label>A)  x = X + h</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques18" id="ques18B" value="B" />
+                        <label >B) X = x + h</label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques18" id="ques18C" value="C" />
+                        <label >C)  x + X = h </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques18" id="ques18D" value="D" />
+                        <label >D) None</label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+           
+       
+<li>
+
+
+               
+                    <h3>x = 4 is a line:</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques19" id="ques19A" value="A" />
+                        <label >A) Parallel to x - axis</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques19" id="ques19B" value="B" />
+                        <label >B)Parallel to y - axis  </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques19" id="ques19C" value="C" />
+                        <label >C) Perpendicular to y-axis </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques19" id="ques19D" value="D" />
+                        <label >D)None of these  </label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+       
+<li>
+               
+                    <h3> The point (2, 5) lies the lie 3x - y + 1 = 0</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques20" id="ques20A" value="A" />
+                        <label >A)  Above</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques20" id="ques20B" value="B" />
+                        <label >B)Below  </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques20" id="ques20C" value="C" />
+                        <label >C)On </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques20" id="ques20D" value="D" />
+                        <label >D) None</label>
+                    </div>
+               
+                </li>
+           
+            </ul>
+
+           
+            <button type="submit" value="submit" class="b1">Submit</button>
+ 
+ </form>
+ 
+ </div>
+
+</body>
+ <?php
+
+ error_reporting(E_ERROR | E_PARSE);
+$totalCor=0;
+ 
+	 $nfa1=$_POST['ques1'];
+	 $nfa2=$_POST['ques2'];
+     $nfa3=$_POST['ques3'];
+	
+	   $nfa4=$_POST['ques4'];
+	   $nfa5=$_POST['ques5'];
+       $nfa6=$_POST['ques6'];
+	 
+	  $nfa7=$_POST['ques7'];
+      $nfa8=$_POST['ques8'];
+      $nfa9=$_POST['ques9'];
+	 
+	 $nfa10=$_POST['ques10'];
+
+
+$nfa11=$_SESSION['ques11'];
+  $nfa12=$_SESSION['ques12'];
+  $nfa13=$_SESSION['ques13'];
+           
+
+
+  $nfa14=$_SESSION['ques14'];
+  $nfa15=$_SESSION['ques15'];
+  $nfa16=$_SESSION['ques16'];
+
+  $nfa17=$_SESSION['ques17'];
+  $nfa18=$_SESSION['ques18'];
+  $nfa19=$_SESSION['ques19'];
+
+  $nfa20=$_SESSION['ques20'];
+
+            if (  $nfa1 == "A") { $totalCor++; }
+            if (  $nfa2 == "B") { $totalCor++; }
+            if (  $nfa3 == "C") { $totalCor++; }
+		    if (  $nfa4 == "D") { $totalCor++; }
+			
+            if (   $nfa5 == "A") { $totalCor++; }
+            if (   $nfa6 == "B") { $totalCor++; }
+            if (   $nfa7== "C") { $totalCor++; }
+            if (   $nfa8 == "D") { $totalCor++; }
+			
+            if (   $nfa9 == "A") { $totalCor++; }
+            if (   $nfa10 == "B") {$totalCor++; }
+    
+
+$_SESSION['totalCor'] = $totalCor; 
+
+
+
+?>
+</html>

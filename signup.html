@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fatima_signup</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript"></script>
+<style>
+
+body{
+  background-color: purple; 
+}
+img{
+  width: 100%;
+  height: 30%;
+}
+.container {
+  position: relative;
+  text-align: center;
+  width:100%;
+}
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 59%;
+  transform: translate(-50%, -50%);
+}
+
+
+.navbar{
+    background-color: purple;
+	height:50px;
+}
+nav li:hover
+{
+	color:purple:
+	background-color:white;
+}
+.container1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  width:600px;
+  
+}
+footer
+{
+font-weight:bold;
+font-size:18px;
+font-family:Book Antiqua;
+ background-color:#800080;
+background-size:cover;
+overflow:hidden;
+}
+footer a:hover
+{
+font-size:25px;
+font-weight:bold;
+color:white;
+text-decoration:none;
+}
+ a:hover
+{
+color:white;
+text-decoration:none;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <img src="https://images.unsplash.com/photo-1616001089004-04948fc0e6c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" style="width:100%;" >
+  
+  <div class="centered">
+       <div class="tag">
+	   <div class="container">
+<div class="row text-center text-xs-center text-sm-left text-md-left">
+<form method="post">
+<center>
+<div class="col-md-8">
+<div class="md-form form-group">
+	<h1> <b>Sign Up</b> </h1>
+	<hr>	
+</div>
+</div>
+<div class="col-md-8">
+<div class="md-form form-group">
+	<p style="font-size: 18px;"><b>First Name:</b></p>     
+    <input type="text" name="Fname" id="Fname" placeholder="FirstName"required=""class="form-control" >
+</div></div>
+
+<div class="col-md-8">
+<div class="md-form form-group">
+	<p style="font-size: 18px;"><b>Last Name:</b></p>     
+    <input type="text" name="Lname" id="Lname" placeholder="LastName" required=""class="form-control" >
+</div></div>
+
+<div class="col-md-8">
+<div class="md-form form-group">
+	<p style="font-size: 18px;"><b>E-MAIL:</b></p>     
+    <input type="email" name="email" id="email" placeholder="login_username"required=""class="form-control" >
+</div></div>
+
+<div class="col-md-8">
+<div class="md-form form-group">
+    <p style="font-size: 18px;"><b>Password:</b></p>
+    <input type="password"name="password""id="Pass" placeholder="Password"/required=""class="form-control"></div></div><br><br>  
+  
+<div class="col-md-8">
+<div class="md-form form-group">
+	<button type="submit" name="Register"  value="Register" class="btn btn-secondary">SignUp</button>  	  	
+</div>
+</div>
+
+</div>
+</form>
+</center>	
+</div></div>
+</div>
+
+
+
+</body>
+</html> 
+
+
+
+
+
+<?php
+error_reporting(E_ERROR | E_PARSE);
+
+if(isset($_POST["Register"]))
+{
+$link = mysqli_connect("localhost", "root", "", "result");
+
+if($link === false)
+{
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+$a =$_POST ['Fname'];
+$d = $_POST ['Lname'];
+$b = $_POST['email'];
+$c= $_POST['password'];
+$sql = "INSERT INTO register( email,password,Fname,Lname) VALUES ( '$b','$c','$a','$d')";
+if(mysqli_query($link, $sql))
+{
+   
+	  header("location:login.php");
+}
+
+else
+{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+
+mysqli_close($link);
+
+
+
+
+
+}
+
+?>
+</html>

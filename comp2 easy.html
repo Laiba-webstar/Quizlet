@@ -1,0 +1,410 @@
+<html>
+ <?php
+ $s_id = $_GET['score_id'];
+session_start();
+?>
+<head>
+<style>
+
+#c2{
+	margin-right:5%;	
+	
+}
+span{
+margin:15%;
+
+}
+
+.m1{
+border-style:groove;
+background-color:white;
+	 border: 5px outset purple;
+
+margin-left:15%;
+margin-right:15%;
+}
+
+.b1{
+margin-left:40%;
+padding:10px;
+background-color:  #993399;
+color:white;
+font-size:35px;
+  border-radius: 5px;
+  border: 5px solid  #993399;
+
+}
+</style>
+
+<head>
+<body style="background-color:#f2d9f2;">
+<br>
+ <br>
+ <br>
+ <p><span style="color: #fff; background: purple; padding: 9px;"><b>Questions</b></span></p>
+
+ 
+ <div class="m1">
+ <form method="POST" action="comp3 easy.php?score_id=<?php echo $s_id; ?>" >
+
+            <ul>
+           
+           
+                <li>
+               
+                    <h3>Which type of variable can store numbers data ?</h3>
+   
+                    <div>
+                        <input type="radio" name="ques11" id="ques11A" value="A" />
+                        <label >A)  int  </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques11" id="ques11B" value="B" />
+                        <label >B)float </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques11" id="ques11C" value="C" />
+                        <label >C)double </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques11" id="ques11D" value="D" />
+                        <label >D) all</label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+               
+                <li>
+               
+                    <h3>The views are used :	</h3>
+                   
+                    <div>
+                        <input type="radio" name="ques12" id="ques12A" value="A" />
+                        <label >A) To hide columns</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques12" id="ques12B" value="B" />
+                        <label >B)To hide rows </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques12" id="ques12C" value="C" />
+                        <label >C) To hide complex SQL statements </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques12" id="ques12D" value="D" />
+                        <label >D) Al of the above</label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+               
+                <li>
+               
+                    <h3>A table is a two-dimensional structure that consists of:</h3>
+                   
+                    <div>
+<input type="radio" name="ques13" id="ques13A" value="A" />
+
+                        <label >A) x and y co-ordinates </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques13" id="ques13B" value="B" />
+                        <label >B)Matrix elements  </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques13" id="ques13C" value="C" />
+                        <label>C) Rows and columns </label>
+                    </div>
+                   
+                    <div>
+                         <input type="radio" name="ques13" id="ques13D" value="D" />
+                        <label >D) Intersection of data  </label>
+                    </div>
+               
+                </li>
+               	<hr id="c2">
+                <li>
+               
+                    <h3>The rows of a relations can be of ___________ order.</h3>
+                   
+                    <div>
+                        <input type="radio" name="ques14" id="ques14A" value="A" />
+                        <label>A) Any   </label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques14" id="ques14B" value="B" />
+                        <label >B) Same
+
+</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques14" id="ques14C" value="C" />
+                        <label >C) Sorted </label>
+                    </div>
+                   
+                    <div>
+                 <input type="radio" name="ques14" id="ques14D" value="D" />
+                        <label> D) Constant</label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+               
+                <li>
+               
+                    <h3>An attribute is also known as a:</h3>
+                   
+                    <div>
+
+
+                        <input type="radio" name="ques15" id="ques15A" value="A" />
+                        <label >A) Table<label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques15" id="ques15B" value="B" />
+                        <label >B) Row </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques15" id="ques15C" value="C" />
+                        <label >C)Relation </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques15" id="ques15D" value="D" />
+                        <label >D) Field</label>
+                    </div>
+               
+                </li>
+           	<hr id="c2">
+       
+<li>
+               
+                    <h3>The functions that are defined by programmer are called::</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques16" id="ques16A" value="A" />
+                        <label >A) User-defined</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques16" id="ques16B" value="B" />
+                        <label >B)Subprograms  </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques16" id="ques16C" value="C" />
+                        <label >C) Subroutines</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques16" id="ques16D" value="D" />
+                        <label >D) Built-in functions </label>
+                    </div>
+               
+                </li>
+           	<hr id="c2">
+           
+<li>
+               
+                    <h3>A two-dimensional table of data is called a</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques17" id="ques17A" value="A" />
+                        <label >A). group </label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques17" id="ques17B" value="B" />
+                        <label >B)set</label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques17" id="ques17C" value="C" />
+                        <label >C)declaration 
+ </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques17" id="ques17D" value="D" />
+                        <label >D) relation </label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+       
+<li>
+               
+                    <h3> An attribute is also known as</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques18" id="ques18A" value="A" />
+                        <label>A)  table</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques18" id="ques18B" value="B" />
+                        <label >B) elation</label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques18" id="ques18C" value="C" />
+                        <label >C) row </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques18" id="ques18D" value="D" />
+                        <label >D) field</label>
+                    </div>
+               
+                </li>
+           	<hr id="c2">
+       
+<li>
+
+
+               
+                    <h3>Which loop statement executes the body of loop at least once?</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques19" id="ques19A" value="A" />
+                        <label >A) do-while</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques19" id="ques19B" value="B" />
+                        <label >B) While </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques19" id="ques19C" value="C" />
+                        <label >C) For </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques19" id="ques19D" value="D" />
+                        <label >D)None of these</label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+       
+<li>
+               
+                    <h3>Int type variable use -------------------- bytes in memory</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques20" id="ques20A" value="A" />
+                        <label >A) 2 </label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques20" id="ques20B" value="B" />
+                        <label >B) 4 </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques20" id="ques20C" value="C" />
+                        <label >C) 6 </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques20" id="ques20D" value="D" />
+                        <label >D) 8 </label>
+                    </div>
+               
+                </li>
+           
+                     
+            </ul>
+
+           
+            <button type="submit" value="submit" class="b1">Submit</button>
+ 
+ </form>
+ 
+ </div>
+
+</body>
+ <?php
+
+ error_reporting(E_ERROR | E_PARSE);
+$tot=0;
+ 
+	  $kk1=$_POST['ques1'];
+	  $kk2=$_POST['ques2'];
+      $kk3=$_POST['ques3'];
+	
+	   $kk4=$_POST['ques4'];
+	   $kk5=$_POST['ques5'];
+       $kk6=$_POST['ques6'];
+	 
+	    $kk7=$_POST['ques7'];
+        $kk8=$_POST['ques8'];
+        $kk9=$_POST['ques9'];
+	 
+	    $kk10=$_POST['ques10'];
+
+
+   $kk11=$_SESSION['ques11'];
+   $kk12=$_SESSION['ques12'];
+   $kk13=$_SESSION['ques13'];
+           
+
+
+  $kk14=$_SESSION['ques14'];
+  $kk15=$_SESSION['ques15'];
+  $kk16=$_SESSION['ques16'];
+
+  $kk17=$_SESSION['ques17'];
+  $kk18=$_SESSION['ques18'];
+  $kk19=$_SESSION['ques19'];
+
+   $kk20=$_SESSION['ques20'];
+
+            if (   $kk1 == "A") { $tot++; }
+            if (   $kk2 == "B") { $tot++; }
+            if (   $kk3 == "C") { $tot++; }
+		    if (   $kk4 == "D") { $tot++; }
+			
+            if (    $kk5 == "A") { $tot++; }
+            if (    $kk6 == "B")  {$tot++; }
+            if (    $kk7== "C") {  $tot++; }
+            if (    $kk8 == "D") { $tot++; }
+			
+            if (    $kk9 == "A") { $tot++; }
+            if (    $kk10 == "B"){ $tot++; }
+    
+
+$_SESSION['tot'] = $tot; 
+
+
+
+?>
+</html>

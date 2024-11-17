@@ -1,0 +1,81 @@
+
+<html>
+<?php
+
+
+$s_id = $_GET['score_id'];
+?>
+
+
+<?php
+
+
+error_reporting(E_ERROR | E_PARSE);
+
+ session_start();
+$l31 = $_POST['ques31'];
+$l32 = $_POST['ques32'];
+$l33 = $_POST['ques33'];
+$l34 = $_POST['ques34'];
+$l35 = $_POST['ques35'];
+$l36 = $_POST['ques36'];
+$l37 = $_POST['ques37'];
+$l38 = $_POST['ques38'];
+$l39 = $_POST['ques39'];
+$l40 = $_POST['ques40'];
+ 
+$mon= $_SESSION['istanbul'];
+
+ if ($l31 == "C") { $mon++; }
+            if ($l32 == "C") { $mon++; }
+            if ($l33 == "C") { $mon++; }
+		  if ($l34 == "C") { $mon++;}
+            if ($l35 == "C") { $mon++; }
+            if ($l36 == "C") {$mon++; }
+			if ($l37 == "C") { $mon++; }
+            if ($l38 == "C") { $mon++;}
+            if ($l39 == "C") { $mon++;}
+            if ($l40 == "C") { $mon++; }
+
+ $_SESSION['tues'] = $mon; 
+ ?>
+   <head>
+<style>
+
+.abc{
+	background-color:white;
+	 border: 7px outset purple;
+margin:13%;
+	padding:3%;
+	  text-align: center;
+	  font-size:35px;
+}
+.b1{
+display:center;
+background-color:  #993399;
+color:white;
+padding:10px;
+font-size:35px;
+  border-radius: 5px;
+  border: 5px solid  #993399;
+
+}
+</style>
+</head>
+
+<body style="background-color:#f2d9f2;">
+ <div class="abc">
+<?php
+ echo "Your score is: ".$mon."/40";
+if($mon < 20)
+{
+	echo '<h2>You need to score at least 50% to pass the quiz </h2>';
+}
+else {
+	echo '<h2>You have passed the quiz and scored '.$mon.'.</h2>';
+}
+?>
+<form method="post" action="db.php?score_id=<?php echo $s_id; ?>"  >
+   <button type="submit"  name="submit" value="submit" class="b1">Submit</button>
+
+</html>

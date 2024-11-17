@@ -1,0 +1,92 @@
+
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Page Title</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		
+   </head>
+   <body>
+      <?php
+       $serverName = 'localhost';
+
+$userName = 'root';
+
+$password = '';
+
+$dbname = 'education';
+
+$conn =
+mysqli_connect($serverName,$userName,$password,$dbname);
+if(!$conn){
+
+die("Couldn't connect!" . mysqli_connect_error());
+
+}
+
+else{
+
+
+
+}
+         ?>
+    
+      <table
+         class="table table-bordered ">
+        
+            <tr>
+               <th scope="col"></th>
+               <th scope="col">Name</th>
+               <th scope="col">email</th>
+               <th scope="col">Phone no</th>
+			    <th scope="col">Address</th>
+               <th scope="col">CNIC</th>
+               <th scope="col">Gender</th>
+             
+            </tr>
+       
+         <tbody>
+            <?php
+               $sql ="SELECT * FROM register";
+
+              
+               $result = $conn->query($sql);
+            
+               $index =0; 
+              
+               if ($result->num_rows>0) {
+       
+               while($row = $result->fetch_assoc()) {
+               $index++;
+               ?>
+         
+            <tr>
+               <th scope="row"><?=$index;?></th>
+               <td><?=$row['Name'];?></td>
+               <td><?=$row['email'];?></td>
+               <td><?=$row['phoneno'];?></td>
+               <td><?=$row['Address'];?></td>
+               <td><?=$row['CNIC'];?></td>
+               <td><?=$row['Gender'];?></td>
+               
+            </tr>
+            <?php
+               }
+               } else {
+               $conn->close();
+               ?>
+            <tr>
+               <th
+                  scope="row"></th>
+               <td
+                  colspan="7">No data available</td>
+            </tr>
+            <?php
+               }
+               ?>
+         </tbody>
+      </table>
+   </body>
+</html>

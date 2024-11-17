@@ -1,0 +1,377 @@
+<html>
+ <?php
+ $s_id = $_GET['score_id'];
+session_start();
+?>
+<head>
+<style>
+
+#c2{
+	margin-right:5%;	
+	
+}
+span{
+margin:15%;
+
+}
+
+.m1{
+	border-style:groove;
+background-color:white;
+	 border: 5px outset purple;
+
+margin-left:15%;
+margin-right:15%;
+	
+	
+}
+
+.b1{
+margin-left:40%;
+padding:10px;
+background-color:  #993399;
+color:white;
+font-size:35px;
+  border-radius: 5px;
+  border: 5px solid  #993399;
+
+}
+</style>
+
+</head>
+<body style="background-color:#f2d9f2;">
+<br>
+ <br>
+ <br>
+ <p><span style="color: #fff; background: purple; padding: 9px;"><b>Questions</b></span></p>
+
+ <div class="m1">
+ <form   method="POST" action="comp2 easy.php?score_id=<?php echo $s_id; ?>" >
+  
+
+            <ul>
+           
+                <li>
+               
+                    <h3>The loop statements in a language are:<h3>
+   
+                    <div>
+                        <input type="radio" name="ques1" id="ques1A" value="A" />
+                        <label>A)  2  </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques1" id="ques1B" value="B" />
+                        <label>B) 3 </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques1" id="ques1C" value="C" />
+                        <label>C) 4</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques1" id="ques1D" value="D" />
+                        <label>D) 3 </label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+               
+                <li>
+               
+                    <h3>Which of the following is the correct association?</h3>
+                   
+                    <div>
+                        <input type="radio" name="ques2" id="ques2A" value="A" />
+                        <label >A) File = column</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques2" id="ques2B" value="B" />
+                        <label >B) Record = row </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques2" id="ques2C" value="C" />
+                        <label >C)  Field = row</label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques2" id="ques2D" value="D" />
+                        <label >D)  Record = table</label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+               
+                <li>
+               
+                    <h3>The number of characters in variable field is:</h3>
+                   
+                    <div>
+<input type="radio" name="ques3" id="ques3A" value="A" />
+
+                        <label >A)  Constant </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques3" id="ques3B" value="B" />
+                        <label >B) Variable  </label>
+                    </div>
+                   
+                    <div>
+                        <input type="radio" name="ques3" id="ques3C" value="C" />
+                        <label for="question-3-answers-C">C) 10 </label>
+                    </div>
+                   
+                    <div>
+                         <input type="radio" name="ques3" id="ques3D" value="D" />
+                        <label >D) 100 </label>
+                    </div>
+               
+                </li>
+               	<hr id="c2">
+                <li>
+               
+                    <h3>____ refers to group of statements enclosed in opening and closing braces.</h3>
+                   
+                    <div>
+                        <input type="radio" name="ques4" id="ques4A" value="A" />
+                        <label>A) Control structure </label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques4" id="ques4B" value="B" />
+                        <label >B)  Compound statement 
+
+</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques4" id="ques4C" value="C" />
+                        <label >C) Sequence structure </label>
+                    </div>
+                   
+                    <div>
+                 <input type="radio" name="ques4" id="ques4D" value="D" />
+                        <label> D) Instruction</label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+               
+                <li>
+               
+                    <h3>In 3NF a non-key attribute must not depend on a</h3>
+                   
+                    <div>
+
+
+                        <input type="radio" name="ques5" id="ques5A" value="A" />
+                        <label >A) Non-key attribute<label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques5" id="ques5B" value="B" />
+                        <label >B) Key attribute </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques5" id="ques5C" value="C" />
+                        <label >C) Composite key</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques5" id="ques5D" value="D" />
+                        <label >D) Sort key </label>
+                    </div>
+               
+                </li>
+           	<hr id="c2">
+       
+<li>
+               
+                    <h3>The data type can handle decimal places is:</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques6" id="ques6A" value="A" />
+                        <label >A) Long<label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques6" id="ques6B" value="B" />
+                        <label >B) float</label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques6" id="ques6C" value="C" />
+                        <label >C) char</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques6" id="ques6D" value="D" />
+                        <label >D) string</label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+           
+           
+<li>
+               
+                    <h3>Which of the following key does not hold uniqueness property ?</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques7" id="ques7A" value="A" />
+                        <label >A) candidate key</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques7" id="ques7B" value="B" />
+                        <label >B)  foreign key </label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques7" id="ques7C" value="C" />
+                        <label >C)  primary key</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques7" id="ques7D" value="D" />
+                        <label >D)   Secondary key</label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+       
+<li>
+               
+                    <h3>Which key is used to move form field to field in Table window of Datasheet view? </h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques8" id="ques8A" value="A" />
+                        <label>A)  Tab </label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques8" id="ques8B" value="B" />
+                        <label >B) Esc</label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques8" id="ques8C" value="C" />
+                        <label >C) Enter </label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques8" id="ques8D" value="D" />
+                        <label >D) Spacebar </label>
+                    </div>
+               
+                </li>
+           
+       	<hr id="c2">
+<li>
+
+
+               
+                    <h3>Key is used in<h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques9" id="ques9A" value="A" />
+                        <label>A) if statement</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques9" id="ques9B" value="B" />
+                        <label>B)  Else if statement</label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques9" id="ques9C" value="C" />
+                        <label >C) Switch statement</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques9" id="ques9D" value="D" />
+                        <label >D) All of the above </label>
+                    </div>
+               
+                </li>
+					<hr id="c2">
+       
+<li>
+               
+                    <h3>A subform can be created using:</h3>
+                   
+                    <div>
+
+
+
+                        <input type="radio" name="ques10" id="ques10A" value="A" />
+                        <label >A) Drag and drop method</label>
+                    </div>
+                   
+                    <div>
+                      <input type="radio" name="ques10" id="ques10B" value="B" />
+                        <label >B) Subform wizard</label>
+                    </div>
+                   
+                    <div>
+                    <input type="radio" name="ques10" id="ques10C" value="C" />
+                        <label >C) The form Wizard</label>
+                    </div>
+                   
+                    <div>
+                       <input type="radio" name="ques10" id="ques10D" value="D" />
+                        <label >D)All </label>
+                    </div>
+               
+                </li>
+           
+     </ul>
+
+           
+            <button type="submit"  value="submit" class="b1">Submit</button>
+ </form>
+ 
+ 
+ </div>
+
+</body>
+<?php
+ error_reporting(E_ERROR | E_PARSE);
+ 
+	  $kk1=$_SESSION['ques1'];
+	  $kk2=$_SESSION['ques2'];
+      $kk3=$_SESSION['ques3'];
+
+       $kk4=$_SESSION['ques4'];
+	   $kk5=$_SESSION['ques5'];
+       $kk6=$_SESSION['ques6'];
+	   $kk7=$_SESSION['ques7'];
+	   $kk8=$_SESSION['ques8'];
+    
+       $kk9=$_SESSION['ques9'];
+       $kk10=$_SESSION['ques10'];  
+
+
+			
+			
+           
+?>
+</html>
+

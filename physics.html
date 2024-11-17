@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<title>Physics 1</title>
+<html lang="en">
+<title>Page Title</title>
+<head>
+<style>
+#q1more {
+display: none;
+}
+
+#q1mybtn
+{
+padding:6px;
+background-color:  #993399;
+color:white;
+font-size:15px;
+border-radius: 5px;
+  border: 5px solid  #993399;
+}
+
+#q2more {
+display: none;
+}
+
+#q2mybtn
+{
+ padding:6px;
+background-color:  #993399;
+color:white;
+font-size:15px;
+  border-radius: 5px;
+  border: 5px solid  #993399;
+}
+
+#q3more {
+display: none;
+}
+
+#q3mybtn
+{
+padding:6px;
+background-color:  #993399;
+color:white;
+font-size:15px;
+  border-radius: 5px;
+  border: 5px solid  #993399;
+}
+
+#q4more {
+display: none;
+}
+
+#q4mybtn
+{
+ padding:6px;
+background-color:  #993399;
+color:white;
+font-size:15px;
+  border-radius: 5px;
+  border: 5px solid  #993399;
+
+}
+#q5more {
+display: none;
+}
+
+#q5mybtn
+{
+ padding:6px;
+background-color:  #993399;
+color:white;
+font-size:15px;
+border-radius: 5px;
+border: 5px solid  #993399;
+
+}
+#q6more {
+display: none;
+}
+
+#q6mybtn
+{
+ padding:6px;
+background-color:  #993399;
+color:white;
+font-size:15px;
+border-radius: 5px;
+border: 5px solid  #993399;
+
+}
+#q7more {
+display: none;
+}
+
+#q7mybtn
+{
+ padding:6px;
+background-color:  #993399;
+color:white;
+font-size:15px;
+border-radius: 5px;
+border: 5px solid  #993399;
+
+}
+
+#q8more {
+display: none;
+}
+
+#q8mybtn
+{
+ padding:6px;
+background-color:  #993399;
+color:white;
+font-size:15px;
+border-radius: 5px;
+border: 5px solid  #993399;
+
+}
+
+#q9more {
+display: none;
+}
+
+#q9mybtn
+{
+ padding:6px;
+background-color:  #993399;
+color:white;
+font-size:15px;
+border-radius: 5px;
+border: 5px solid  #993399;
+
+}
+
+#q10more {
+display: none;
+}
+
+#q10mybtn
+{
+ padding:6px;
+background-color:  #993399;
+color:white;
+font-size:15px;
+border-radius: 5px;
+border: 5px solid  #993399;
+
+}
+
+
+#a1
+{
+text-align:center;
+font-size:20px;
+}
+
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: ;
+  color: black;
+}
+
+.previous {
+  background-color: #993399;
+  color: white;
+}
+
+.next {
+  background-color: #993399;
+  color:white;
+}
+
+.m1{
+border-style:groove;
+background-color:white;
+border: 5px outset purple;
+margin-left:15%;
+margin-right:15%;
+}
+#c2{
+	margin-right:5%;		
+}
+#span{
+margin:15%;
+}
+
+</style>
+</head>
+<body style="background-color:#f2d9f2;">
+<br>
+ <br>
+ <br>
+  
+ <p><span id="span" style="color: #fff; background: purple; padding: 9px;"><b>Questions</b></span></p>
+ <div class="m1">
+ <ul>
+<li>
+<h3 class="question">The concept of electric field lines is introduced by: . </h3>
+<ul class="answers">
+
+ <label> A)  Coulomb  </label> <br>
+ <label> B) Faraday </label> <br>
+ <label> C) Einstein </label> <br>
+ <label> D) Joseph Henry </label> <br>
+
+</br>
+  <span id="q1dots"></span>
+<span id="q1more">
+<b> B) Faraday </b> <br>
+</span>
+</br>
+<button id="q1mybtn" onclick="q1function()">View Answer </button>
+</ul>
+</li>
+<br>
+
+<hr id="c2">
+<li>
+<h3 class="question">The product of resistance and capacitance is:</h3>
+<ul class="answers">
+
+ <label> A)  Velocity </label> <br>
+ <label> B)  Force</label> <br>
+ <label> C)  Acceleration  </label> <br>
+ <label> D) Time</label> <br>
+
+<br>
+  <span id="q2dots"></span>
+<span id="q2more">
+<b> D) Time </b><br>
+</span>
+</br>
+<button id="q2mybtn" onclick="q2function()">View Answer </button>
+</ul>
+</li>
+<br>
+
+<hr id="c2">
+<li>
+<h3 class="question">If a charged body is moved against the electric field it will gain:  </h3>
+<ul class="answers">
+
+ <label> A) Elastic Potential Energy </label> <br>
+ <label> B) Kinetic Energ </label> <br>
+ <label> C) Gravitational Energy </label> <br>
+ <label> D)Electric Potential Energy   </label> <br>
+
+<br>
+  <span id="q3dots"></span>
+<span id="q3more">
+ 
+ <b>(D) Electric Potential Energy </b>  <br>
+</span>
+</br>
+<button id="q3mybtn" onclick="q3function()">View Answer </button>
+</ul>
+</li>
+<br>
+
+<hr id="c2">
+<li>
+<h3 class="question">Electric intensity inside the hollow sphere is </h3>
+<ul class="answers">
+
+ <label> A) σ/2ε </label> <br>
+ <label> B) σ/εo</label> <br>
+ <label> C)1/εo  </label> <br>
+ <label> D)Zero</label> <br>
+
+<br>
+  <span id="q4dots"></span>
+<span id="q4more">
+<b>(D) zer0 </b> <br>
+</span>
+</br>
+<button id="q4mybtn" onclick="q4function()">View Answer </button>
+</ul>
+</li>
+<br>
+
+<hr id="c2">
+<li>
+<h3 class="question"> Coulomb/volt is called: </h3>
+<ul class="answers">
+
+ <label> A) Farad </label> <br>
+ <label> B)Ampere  </label> <br>
+ <label> C) Joule </label> <br>
+ <label> D) Henry </label> <br>
+
+<br>
+  <span id="q5dots"></span>
+<span id="q5more">
+<b>A) Farad  <br></b>
+</span>
+</br>
+<button id="q5mybtn" onclick="q5function()">View Answer </button>
+
+</ul>
+</li>
+<br>
+<hr id="c2">
+<li>
+<h3 class="question"> Electron volts is the unit of: </h3>
+<ul class="answers">
+
+ <label> A)Potential </label> <br>
+ <label> B)Potential difference  </label> <br>
+ <label> C)Electric current  </label> <br>
+ <label> D)Electric energy  </label> <br>
+
+<br>
+  <span id="q6dots"></span>
+<span id="q6more">
+<b>(D) Electric energy</b> <br>
+</span>
+</br>
+<button id="q6mybtn" onclick="q6function()">View Answer </button>
+</ul>
+</li>
+<br>
+<hr id="c2">
+<li>
+<h3 class="question"> Q.7 The product of resistance and capacitance is equal to: </h3>
+<ul class="answers">
+
+ <label> A) Force </label> <br>
+ <label> B)Time</label> <br>
+ <label> C) Velocity </label> <br>
+ <label> D)Current</label> <br>
+
+<br>
+  <span id="q7dots"></span>
+<span id="q7more">
+<b>B)Time</b><br>
+</span>
+</br>
+<button id="q7mybtn" onclick="q7function()">View Answer </button>
+</ul>
+</li>
+<br>
+
+
+<hr id="c2">
+<li>
+<h3 class="question"> The charging time of capacitor depends upon:  </h3>
+<ul class="answers">
+
+ <label> A)R/C  </label> <br>
+ <label> B)C/R </label> <br>
+ <label> C)R × C</label> <br>
+ <label> D)sqrt R/c  </label> <br>
+
+<br>
+  <span id="q8dots"></span>
+<span id="q8more">
+ 
+ <b>(C)  R × C</b>  <br>
+</span>
+</br>
+<button id="q8mybtn" onclick="q8function()">View Answer </button>
+</ul>
+</li>
+<br>
+<hr id="c2">
+<li>
+<h3 class="question">The idea for electric field lines was proposed by:</h3>
+<ul class="answers">
+
+ <label> A)Henry</label> <br>
+ <label> B)Ampere</label> <br>
+ <label> C)Ohm </label> <br>
+ <label> D)Michael Faraday</label> <br>
+
+</br>
+  <span id="q9dots"></span>
+<span id="q9more">
+<b> D) Michael Faraday<br></b>
+</span>
+</br>
+<button id="q9mybtn" onclick="q9function()">View Answer </button>
+
+</ul>
+</li>
+<br>
+<hr id="c2">
+<li>
+<h3 class="question">Energy density in case of a capacitor is always proportional to: </h3>
+<ul class="answers">
+
+ <label> A)ε0</label> <br>
+ <label> B)E<sup>2</sup></label> <br>
+ <label> C)V<sup>2</sup></label> <br>
+ <label> D)ε<sup>2</sup></label> <br>
+
+<br>
+  <span id="q10dots"></span>
+<span id="q10more">
+<b>(D) ε<sup>2</sup></b> <br>
+</span>
+</br>
+<button id="q10mybtn" onclick="q10function()">View Answer </button>
+</ul>
+</li>
+<br>
+
+
+
+</ul>
+</div>
+
+<br><br>
+
+<div id="a1">
+<a href="#" class="previous round"> 1</a>
+<a href="p2.php" class="next round">  2</a>
+
+</div>
+<br><br><br><br>
+
+
+<script>
+function q1function() {
+var q1dots = document.getElementById("q1dots");
+var q1moreText = document.getElementById("q1more");
+var q1btnText = document.getElementById("q1mybtn");
+
+if (q1dots.style.display === "none") {
+q1dots.style.display = "inline";
+q1btnText.innerHTML = "View Answer";
+q1moreText.style.display = "none";
+}
+else {
+q1dots.style.display = "none";
+q1btnText.innerHTML = "Hide Answer";
+q1moreText.style.display = "inline";
+}
+}
+function q2function() {
+var q2dots = document.getElementById("q2dots");
+var q2moreText = document.getElementById("q2more");
+var q2btnText = document.getElementById("q2mybtn");
+
+if (q2dots.style.display === "none") {
+q2dots.style.display = "inline";
+q2btnText.innerHTML = "View Answer";
+q2moreText.style.display = "none";
+}
+else {
+q2dots.style.display = "none";
+q2btnText.innerHTML = "Hide Answer";
+q2moreText.style.display = "inline";
+}
+}
+function q3function() {
+var q3dots = document.getElementById("q3dots");
+var q3moreText = document.getElementById("q3more");
+var q3btnText = document.getElementById("q3mybtn");
+
+if (q3dots.style.display === "none") {
+q3dots.style.display = "inline";
+q3btnText.innerHTML = "View Answer";
+q3moreText.style.display = "none";
+}
+else {
+q3dots.style.display = "none";
+q3btnText.innerHTML = "Hide Answer";
+q3moreText.style.display = "inline";
+}
+}
+
+function q4function() {
+var q4dots = document.getElementById("q4dots");
+var q4moreText = document.getElementById("q4more");
+var q4btnText = document.getElementById("q4mybtn");
+
+if (q4dots.style.display === "none") {
+q4dots.style.display = "inline";
+q4btnText.innerHTML = "View Answer";
+q4moreText.style.display = "none";
+}
+else {
+q4dots.style.display = "none";
+q4btnText.innerHTML = "Hide Answer";
+q4moreText.style.display = "inline";
+}
+}
+
+function q5function() {
+var q5dots = document.getElementById("q5dots");
+var q5moreText = document.getElementById("q5more");
+var q5btnText = document.getElementById("q5mybtn");
+
+if (q5dots.style.display === "none") {
+q5dots.style.display = "inline";
+q5btnText.innerHTML = "View Answer";
+q5moreText.style.display = "none";
+}
+else {
+q5dots.style.display = "none";
+q5btnText.innerHTML = "Hide Answer";
+q5moreText.style.display = "inline";
+}
+}
+function q6function() {
+var qdots = document.getElementById("q6dots");
+var qmoreText = document.getElementById("q6more");
+var qbtnText = document.getElementById("q6mybtn");
+
+if (qdots.style.display === "none") {
+qdots.style.display = "inline";
+qbtnText.innerHTML = "View Answer";
+qmoreText.style.display = "none";
+}
+else {
+qdots.style.display = "none";
+qbtnText.innerHTML = "Hide Answer";
+qmoreText.style.display = "inline";
+}
+}
+
+
+
+function q7function() {
+var qdots = document.getElementById("q7dots");
+var qmoreText = document.getElementById("q7more");
+var qbtnText = document.getElementById("q7mybtn");
+
+if (qdots.style.display === "none") {
+qdots.style.display = "inline";
+qbtnText.innerHTML = "View Answer";
+qmoreText.style.display = "none";
+}
+else {
+qdots.style.display = "none";
+qbtnText.innerHTML = "Hide Answer";
+qmoreText.style.display = "inline";
+}
+}
+
+
+
+function q8function() {
+var qdots = document.getElementById("q8dots");
+var qmoreText = document.getElementById("q8more");
+var qbtnText = document.getElementById("q8mybtn");
+
+if (qdots.style.display === "none") {
+qdots.style.display = "inline";
+qbtnText.innerHTML = "View Answer";
+qmoreText.style.display = "none";
+}
+else {
+qdots.style.display = "none";
+qbtnText.innerHTML = "Hide Answer";
+qmoreText.style.display = "inline";
+}
+}
+
+function q9function() {
+var qdots = document.getElementById("q9dots");
+var qmoreText = document.getElementById("q9more");
+var qbtnText = document.getElementById("q9mybtn");
+
+if (qdots.style.display === "none") {
+qdots.style.display = "inline";
+qbtnText.innerHTML = "View Answer";
+qmoreText.style.display = "none";
+}
+else {
+qdots.style.display = "none";
+qbtnText.innerHTML = "Hide Answer";
+qmoreText.style.display = "inline";
+}
+}
+
+function q10function() {
+var qdots = document.getElementById("q10dots");
+var qmoreText = document.getElementById("q10more");
+var qbtnText = document.getElementById("q10mybtn");
+
+if (qdots.style.display === "none") {
+qdots.style.display = "inline";
+qbtnText.innerHTML = "View Answer";
+qmoreText.style.display = "none";
+}
+else {
+qdots.style.display = "none";
+qbtnText.innerHTML = "Hide Answer";
+qmoreText.style.display = "inline";
+}
+}
+
+
+
+</script>
+
+
+</body>
+</html>
+
